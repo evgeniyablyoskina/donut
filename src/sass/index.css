@@ -148,4 +148,132 @@ img {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.registration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 280px;
+}
+@media screen and (min-width: 320px) {
+  .registration {
+    gap: 20px;
+    padding: 32px 21px 32px 23px;
+    background: #fffff9;
+    box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+    border-radius: 150px 150px 0px 0px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .registration {
+    width: 704px;
+    border-radius: 150px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .registration {
+    width: 1280px;
+  }
+}
+
+.registration-common {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.registration__title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-family: "Caveat Brush";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.25;
+  color: #2e2520;
+}
+
+.registration__location,
+.registration__price {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2222222222;
+  color: #2e2520;
+}
+
+.line {
+  display: block;
+  width: 100%;
+  text-align: center;
+  border: 1px solid rgba(171, 129, 108, 0.5);
+}
+
+.registration-form__title {
+  margin-bottom: 20px;
+  margin-top: 8px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #2e2520;
+}
+
+.registration-form__block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 32px;
+}
+
+.registration-form__input {
+  display: block;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #ab816c;
+}
+.registration-form__input:focus-within {
+  border-right: 1px solid #ab816c;
+  border-top: 1px solid #ab816c;
+  border-left: 1px solid #ab816c;
+}
+.registration-form__input::-moz-placeholder {
+  padding-bottom: 2px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(171, 129, 108, 0.5);
+}
+.registration-form__input:-ms-input-placeholder {
+  padding-bottom: 2px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(171, 129, 108, 0.5);
+}
+.registration-form__input::placeholder {
+  padding-bottom: 2px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(171, 129, 108, 0.5);
+}
+
+.button {
+  border: none;
+  padding: 8px 46px 9px 49px;
+  background: #ab816c;
+  border-radius: 25px;
+  font-family: "Caveat Brush";
+  font-size: 18px;
+  line-height: 1.2777777778;
+  color: #ffffff;
 }/*# sourceMappingURL=index.css.map */
