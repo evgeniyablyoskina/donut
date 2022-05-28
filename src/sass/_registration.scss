@@ -1,0 +1,115 @@
+.registration {
+    margin-left: auto;
+    margin-right: auto;
+  
+    @media screen and (min-width: 320px) {
+      width: 280px;
+      padding: 32px 21px 32px 23px;
+  
+      background: #fffff9;
+      box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+      border-radius: 150px 150px 0px 0px;
+    }
+  
+    @media screen and (min-width: 768px) {
+      width: 704px;
+  
+      border-radius: 150px;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 1280px;
+    }
+  }
+  
+  .registration-common {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .registration__title {
+    font-family: 'Caveat Brush';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: calc(30 / 24);
+    color: #2e2520;
+  }
+  
+  .registration__location,
+  .registration__price {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: calc(22 / 18);
+    color: #2e2520;
+  }
+  .registration__price {
+  }
+  
+  .line {
+    border: 1px solid rgba(171, 129, 108, 0.5);
+  }
+  
+  .registration-form {
+  }
+  .registration-form__title {
+    margin-bottom: 20px;
+    margin-top: 8px;
+  
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+  
+    color: #2e2520;
+  }
+  
+  .registration-form__block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  
+    margin-bottom: 32px;
+  }
+  .registration-form__label {
+  }
+  .registration-form__input {
+    display: block;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ab816c;
+  
+    &:focus-within {
+      border-right: 1px solid #ab816c;
+      border-top: 1px solid #ab816c;
+      border-left: 1px solid #ab816c;
+    }
+  
+    &::placeholder {
+      padding-bottom: 2px;
+  
+      font-family: 'Montserrat';
+      font-weight: 400;
+      font-size: 16px;
+      line-height: calc(20 / 16);
+      color: rgba(171, 129, 108, 0.5);
+    }
+  }
+  
+
+  .button {
+    border: none;
+  
+    padding: 8px 46px 9px 49px;
+    background: #ab816c;
+    border-radius: 25px;
+  
+    font-family: 'Caveat Brush';
+    font-size: 18px;
+    line-height: calc(23 / 18);
+  
+    color: #ffffff;
+  }
+  
+  
+  
