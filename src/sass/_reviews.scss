@@ -39,3 +39,33 @@
   line-height: 1.25;
   text-align: center;
 }
+
+// Pagination
+.swiper__pagination{
+  position: static;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+
+  font-size: 14;
+  line-height: 1.21;
+  color: $pagination-color;
+
+  &::before, &::after{
+    content: "";
+    display: block;
+    width: 35px;
+    height: 1px;
+    background-color: $pagination-color;
+  }
+
+  &::before{
+    margin-right: 12px;
+  }
+
+  &::after{
+    margin-left: 12px;
+  }
+}
