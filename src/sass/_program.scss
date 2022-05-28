@@ -1,0 +1,32 @@
+.read-more {
+    color: $pagination-color;
+    font-size: 18px;
+    line-height: 1.28;
+    padding: 10px 30px;
+    max-width: 200px;
+}
+
+
+.extra-text {
+    display: none;
+}
+
+#read-more:checked~.extra-text {
+    display: block;
+}
+
+.less {
+    display: none;
+}
+
+#read-more:checked~.read-more .more {
+    display: none;
+}
+
+#read-more:checked~.read-more .less {
+    display: inline;
+}
+
+.program__title {
+    color: $title-color;
+}
