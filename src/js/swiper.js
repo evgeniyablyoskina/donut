@@ -6,9 +6,9 @@ var swiper = new Swiper(".mySwiper", {
     type: 'fraction',
   },
 
-  autoplay: {
-    delay: 3000,
-  },
+  // autoplay: {
+  //   delay: 3000,
+  // },
   
   // Змінити курсор при перетаскуванні слайду (на ПК)
   grabCursor: true,
@@ -19,13 +19,16 @@ var swiper = new Swiper(".mySwiper", {
   // Встановлюємо активний стартовий слайд
   initialSlide: 1,
 
+  // Встановлюємо активний слайд по центру
+  centeredSlides: true,
+
   // Зациклюємо слайдер
-  loop: false,
+  loop: true,
 
   // Встановлюємо швидкість перелистування слайдів
   speed: 500,
 
-  // effect: 'slides',
+  effect: 'slides',
   // Налаштування слайдера під адаптив
   breakpoints: {
     320: {
