@@ -154,44 +154,70 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 280px;
-}
-@media screen and (min-width: 320px) {
-  .registration {
-    gap: 20px;
-    padding: 32px 21px 32px 23px;
-    background: #fffff9;
-    box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
-    border-radius: 150px 150px 0px 0px;
-  }
+  padding: 32px 21px 32px 23px;
+  background: #fffff9;
+  box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+  border-radius: 150px 150px 0px 0px;
 }
 @media screen and (min-width: 768px) {
   .registration {
-    width: 704px;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    padding: 53px 60px 53px 62px;
     border-radius: 150px;
   }
 }
 @media screen and (min-width: 1280px) {
   .registration {
-    width: 1280px;
+    padding: 54px 105px 53px 107px;
   }
 }
 
-.registration-common {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+@media screen and (max-width: 767px) {
+  .registration__common {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .registration__common {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-right: 56px;
+  }
 }
 
 .registration__title {
   display: block;
   width: 100%;
   text-align: center;
+  margin-bottom: 20px;
   font-family: "Caveat Brush";
   font-weight: 400;
   font-size: 24px;
   line-height: 1.25;
   color: #2e2520;
+}
+@media screen and (min-width: 768px) {
+  .registration__title {
+    position: absolute;
+    top: -49px;
+    right: 0;
+    line-height: 2.7083333333;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .registration__title {
+    position: absolute;
+    top: -49px;
+    right: 0;
+    font-size: 36px;
+    line-height: 1.8055555556;
+  }
 }
 
 .registration__location,
@@ -205,6 +231,28 @@ img {
   line-height: 1.2222222222;
   color: #2e2520;
 }
+@media screen and (min-width: 768px) {
+  .registration__location,
+.registration__price {
+    text-align: right;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .registration__location,
+.registration__price {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .registration-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-right: 54px;
+  }
+}
 
 .line {
   display: block;
@@ -212,22 +260,59 @@ img {
   text-align: center;
   border: 1px solid rgba(171, 129, 108, 0.5);
 }
+@media screen and (min-width: 768px) {
+  .line {
+    display: none;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .line {
+    display: block;
+    transform: rotate(90deg);
+  }
+}
 
 .registration-form__title {
-  margin-bottom: 20px;
-  margin-top: 8px;
+  text-align: center;
   font-family: "Montserrat";
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   color: #2e2520;
 }
+@media screen and (max-width: 767px) {
+  .registration-form__title {
+    margin-bottom: 20px;
+    margin-top: 8px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .registration-form__title {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .registration-form__title {
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.2222222222;
+  }
+}
 
-.registration-form__block {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  margin-bottom: 32px;
+@media screen and (max-width: 767px) {
+  .registration-form__block {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin-bottom: 34px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .registration-form__block {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
 }
 
 .registration-form__input {
@@ -267,7 +352,7 @@ img {
   color: rgba(171, 129, 108, 0.5);
 }
 
-.button {
+.button-reg {
   border: none;
   padding: 8px 46px 9px 49px;
   background: #ab816c;
