@@ -1,10 +1,22 @@
 .reviews__title{
   margin-bottom: 20px;
 
-  font-family: 'Caveat Brush', cursive;
-  font-size: 24px;
-  line-height: 1.25;
   text-align: center;
+}
+
+.swiper__wrapper{
+  @media screen and (min-width: 768px) {
+    
+  }
+}
+
+
+.swiper-slide-prev,
+.swiper-slide-next{
+  margin-top: -50px;
+  & .swiper__comment{
+    display: none;
+  }
 }
 
 .swiper__image{
@@ -12,6 +24,11 @@
 
   border-radius: 50%;
   object-fit: cover;
+
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .swiper__rate{
