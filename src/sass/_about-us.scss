@@ -1,0 +1,138 @@
+.about {
+  background-image: url(./images/background/background_desktop/background_spoon_desktop.png);
+  background-repeat: no-repeat;
+  background-position: 0px;
+  margin-top: 40px;
+}
+@media screen and (min-width: 768px) {
+  background-image: none;
+}
+
+.aboutus {
+  display: block;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 69px;
+    margin-bottom: 77px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 71px;
+    margin-bottom: 22px;
+    max-width: 1033px;
+  }
+}
+
+.aboutus__box {
+  max-width: 336px;
+  max-height: 359px;
+  @media screen and(min-width: 320px) {
+  }
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 32px) / 2);
+  }
+  @media screen and (min-width: 1280px) {
+  }
+}
+
+.aboutus__item {
+  @media screen and(min-width: 320px) {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: 21px;
+    margin-left: 32px;
+    width: calc((100% - 32px) / 2);
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 43px;
+    margin-bottom: 10px;
+    margin-left: 139px;
+    max-width: 392px;
+  }
+}
+
+.aboutus__header {
+  font-family: 'Caveat Brush', cursive;
+  font-weight: 400;
+  text-align: left;
+  color: $name-reviews-color;
+  font-size: 24px;
+  line-height: 1.25;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 36px;
+    line-height: 65px;
+  }
+}
+.aboutus__text {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: $name-reviews-color;
+  @media screen and(min-width: 320px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+    line-height: 1.22;
+  }
+}
+.aboutus__link {
+  font-family: 'Caveat Brush', cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22x;
+  color: $button-bg-color;
+  text-align: left;
+  @media screen and(min-width: 320px) {
+    margin-top: 16px;
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+  &:focus,
+  &:hover {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    color: $button-click-color;
+  }
+}
+
+#check {
+  display: none;
+}
+
+.content {
+  display: none;
+  transition: 0.5s linear;
+
+  @media screen and (min-width: 1280px) {
+    display: block;
+  }
+}
+
+label {
+  display: inline-block;
+}
+
+#check:checked ~ .content {
+  display: block;
+}
+#check:checked ~ .label {
+  visibility: hidden;
+}
+#check:checked ~ .label:after {
+  content: 'Less';
+  display: block;
+  visibility: visible;
+}
