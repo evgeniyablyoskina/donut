@@ -1,0 +1,37 @@
+.contact {
+    
+    text-align: center;
+    
+}
+
+.contact__title {
+    font-family: 'Caveat Brush', cursive;
+   margin-bottom: 20px;
+}
+
+
+
+.contact__form {
+    font-family: 'Montserrat';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+// .contact__form-lable {
+//     display: flex;
+    
+// }
+.contact__form-title {
+    font-size: 16px;
+}
+
+.contact__form-input {
+    border: none;
+    border-bottom: 1px solid #AB816C;
+    font-size: 16px;
+}
+
+.contact__form-label {
+    margin-bottom: 16px;
+}
