@@ -1,13 +1,4 @@
-.about {
-  @media screen and (min-width: 1280px) {
-    background-image: url(../images/background/background_desktop/background_spoon_desktop.png);
-    background-repeat: no-repeat;
-    background-position: 0px;
-    margin-top: 40px;
-  }
-}
-
-.aboutus__body {
+.container__aboutus {
   display: block;
   margin-top: 5px;
 
@@ -19,84 +10,77 @@
     margin-top: 69px;
     margin-bottom: 40px;
   }
+
   @media screen and (min-width: 1280px) {
+    max-width: 1033px;
     margin-top: 111px;
     margin-bottom: 22px;
-    max-width: 1033px;
     padding-left: 0px;
     padding-right: 0px;
   }
 }
+
 .aboutus__image {
-  box-sizing: border-box;
   width: 100%;
   max-width: 501px;
+
   @media screen and (min-width: 768px) {
   }
 }
+
 .aboutus__box {
   width: 100%;
-  @media screen and(min-width: 320px) {
-  }
+
   @media screen and (min-width: 768px) {
-    max-height: 535px;
-    margin-right: 16px;
     width: calc((100% - 16px) / 2);
+    margin-right: 16px;
   }
+
   @media screen and (min-width: 1280px) {
     margin-right: 0px;
   }
 }
 
-.aboutus__item {
+.aboutus__desc {
   margin-top: 16px;
   margin-bottom: 16px;
 
   @media screen and (min-width: 768px) {
-    margin-left: 16px;
     width: calc((100% - 16px) / 2);
+    margin-left: 16px;
   }
+
   @media screen and (min-width: 1280px) {
+    max-width: 392px;
     margin-bottom: 0px;
     margin-left: 139px;
-    max-width: 392px;
   }
 }
 
 .aboutus__header {
-  font-family: 'Caveat Brush', cursive;
-  font-weight: 400;
+  @extend .title;
   text-align: center;
-  color: $name-reviews-color;
-  font-size: 24px;
-  line-height: 1.25;
+
   @media screen and (min-width: 768px) {
     text-align: left;
     margin-bottom: 16px;
   }
+
   @media screen and (min-width: 1280px) {
-    font-size: 36px;
-    line-height: 65px;
     margin-bottom: 10px;
   }
 }
+
 .aboutus__text {
   font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   color: $name-reviews-color;
-  @media screen and(min-width: 320px) {
-  }
-  @media screen and (min-width: 768px) {
-  }
+
   @media screen and (min-width: 1280px) {
     font-size: 18px;
     line-height: 1.22;
   }
-}
-.aboutus__link {
 }
 
 #check {
@@ -115,19 +99,15 @@
 label {
   display: inline-block;
   font-family: 'Caveat Brush', cursive;
-  font-style: normal;
-  font-weight: 400;
   font-size: 18px;
   line-height: 1.22px;
   color: $button-bg-color;
   text-align: left;
-  @media screen and(min-width: 320px) {
-  }
-  @media screen and (min-width: 768px) {
-  }
+
   @media screen and (min-width: 1280px) {
     display: none;
   }
+
   &:focus,
   &:hover {
     color: $button-click-color;
@@ -137,9 +117,11 @@ label {
 #check:checked ~ .content {
   display: block;
 }
+
 #check:checked ~ label {
   visibility: hidden;
 }
+
 #check:checked ~ label:after {
   content: 'Less';
   display: block;
