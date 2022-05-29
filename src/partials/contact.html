@@ -8,10 +8,10 @@
                 <h3 class="contact__form-title">We will answer any question!</h3>
                     <label class="contact__form-label" for="feedback">
                         
-                        <input class="contact__form-input" type="email" name="feedback" id="feedback" placeholder="Email">
+                        <input class="contact__form-input" type="email" name="feedback" id="feedback" placeholder="Email" pattern="[a-z]{@}">
                      </label>
                      <label class="contact__form-label" for="feedback">
-                        <input class="contact__form-input" type="text" name="feedback" id="feedback" placeholder="Type your question">
+                        <input class="contact__form-input" type="text" name="feedback" id="feedback" minlength="3" maxlength="50" step="1" placeholder="Type your question">
                      </label>
                     <button class="button" type="submit">Send</button>
             </form>
