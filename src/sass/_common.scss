@@ -174,3 +174,40 @@ img {
     line-height: 1.8;
   }
 }
+.read-more {
+  color: $pagination-color;
+  font-family: 'Caveat Brush', cursive;
+  line-height: 1.28;
+  padding: 10px 30px;
+  max-width: 200px;
+  margin-top: 16px;
+  display: block;
+  padding: 0;
+  cursor: pointer;
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.extra-text {
+  display: none;
+  @media screen and (min-width: 1280px) {
+    display: block;
+  }
+}
+
+#read-more:checked ~ .extra-text {
+  display: block;
+}
+
+.less {
+  display: none;
+}
+
+#read-more:checked ~ .read-more .more {
+  display: none;
+}
+
+#read-more:checked ~ .read-more .less {
+  display: inline;
+}
