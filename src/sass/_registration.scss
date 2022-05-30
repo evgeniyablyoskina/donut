@@ -16,6 +16,7 @@
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
+    gap: 56px;
 
     padding: 40px 60px 66px 62px;
 
@@ -23,7 +24,7 @@
   }
 
   @media screen and (min-width: 1280px) {
-    width: 1280px;
+    padding: 40px 60px 66px 62px;
   }
 }
 
@@ -36,18 +37,25 @@
   font-family: 'Caveat Brush';
   font-weight: 400;
   font-size: 24px;
+  line-height: calc(30 / 24);
+
   color: #2e2520;
 
   @media screen and (max-width: 767px) {
     transform: translateY(200%);
-
-    line-height: calc(30 / 24);
   }
 
   @media screen and (min-width: 768px) {
     margin-bottom: 8px;
     margin-top: 40px;
+
     line-height: calc(65 / 24);
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 16px;
+    margin-top: 60px;
+    font-size: 36px;
+    line-height: calc(65 / 36);
   }
 }
 
@@ -55,15 +63,6 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-
-  @media screen and (max-width: 767px) {
-    // margin-top: 82px;
-  }
-}
-
-.registration__location {
-  @media screen and (min-width: 768px) {
-  }
 }
 
 .registration__location,
@@ -77,12 +76,33 @@
   font-size: 18px;
   line-height: calc(22 / 18);
   color: #2e2520;
+
+  @media screen and (min-width: 768px) {
+    text-align: right;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 20px;
+    line-height: calc(24 / 20);
+  }
 }
 
 .line {
   display: block;
   width: 100%;
   border: 1px solid rgba(171, 129, 108, 0.5);
+}
+.line-mobile {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    display: none;
+  }
+}
+.line-desktop {
+  @media screen and (max-width: 1279px) {
+    display: none;
+  }
+  display: block;
+  transform: rotate(90deg);
+  width: 190px;
 }
 
 .registration-form__title {
@@ -96,12 +116,25 @@
   line-height: calc(20 / 16);
 
   color: #2e2520;
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    text-align: left;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+    line-height: calc(22 / 18);
+  }
 }
 
 .registration-form__block {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.registration-form__label {
+  display: block;
 }
 
 .registration-form__input {
@@ -140,10 +173,16 @@
 
   @media screen and (max-width: 767px) {
     margin-top: 12px;
+
+    font-weight: 400;
+    font-size: 18;
+    line-height: calc(23 / 18);
   }
 
   @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1280px) {
+    font-size: 24;
+    line-height: calc(30 / 24);
   }
 }

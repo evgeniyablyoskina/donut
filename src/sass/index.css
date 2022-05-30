@@ -930,13 +930,14 @@ label:focus, label:hover {
 @media screen and (min-width: 768px) {
   .registration {
     flex-direction: row;
+    gap: 56px;
     padding: 40px 60px 66px 62px;
     border-radius: 150px;
   }
 }
 @media screen and (min-width: 1280px) {
   .registration {
-    width: 1280px;
+    padding: 40px 60px 66px 62px;
   }
 }
 
@@ -947,12 +948,12 @@ label:focus, label:hover {
   font-family: "Caveat Brush";
   font-weight: 400;
   font-size: 24px;
+  line-height: 1.25;
   color: #2e2520;
 }
 @media screen and (max-width: 767px) {
   .registration__title {
     transform: translateY(200%);
-    line-height: 1.25;
   }
 }
 @media screen and (min-width: 768px) {
@@ -962,12 +963,21 @@ label:focus, label:hover {
     line-height: 2.7083333333;
   }
 }
+@media screen and (min-width: 1280px) {
+  .registration__title {
+    margin-bottom: 16px;
+    margin-top: 60px;
+    font-size: 36px;
+    line-height: 1.8055555556;
+  }
+}
 
 .registration-common {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
+
 .registration__location,
 .registration__price {
   display: block;
@@ -979,11 +989,41 @@ label:focus, label:hover {
   line-height: 1.2222222222;
   color: #2e2520;
 }
+@media screen and (min-width: 768px) {
+  .registration__location,
+.registration__price {
+    text-align: right;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .registration__location,
+.registration__price {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
 
 .line {
   display: block;
   width: 100%;
   border: 1px solid rgba(171, 129, 108, 0.5);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .line-mobile {
+    display: none;
+  }
+}
+
+.line-desktop {
+  display: block;
+  transform: rotate(90deg);
+  width: 190px;
+}
+@media screen and (max-width: 1279px) {
+  .line-desktop {
+    display: none;
+  }
 }
 
 .registration-form__title {
@@ -996,11 +1036,26 @@ label:focus, label:hover {
   line-height: 1.25;
   color: #2e2520;
 }
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .registration-form__title {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .registration-form__title {
+    font-size: 18px;
+    line-height: 1.2222222222;
+  }
+}
 
 .registration-form__block {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.registration-form__label {
+  display: block;
 }
 
 .registration-form__input {
@@ -1048,8 +1103,18 @@ label:focus, label:hover {
 @media screen and (max-width: 767px) {
   .registration__button {
     margin-top: 12px;
+    font-weight: 400;
+    font-size: 18;
+    line-height: 1.2777777778;
   }
 }
+@media screen and (min-width: 1280px) {
+  .registration__button {
+    font-size: 24;
+    line-height: 1.25;
+  }
+}
+
 .contact {
   text-align: center;
   line-height: 1.25;
