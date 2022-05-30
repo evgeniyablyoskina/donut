@@ -1,4 +1,4 @@
-.registration-section {
+.registration {
   position: relative;
 
   @media screen and (max-width: 767px) {
@@ -19,11 +19,7 @@
   }
 }
 
-.registration-section__donut {
-  //   @media screen and (max-width: 767px) {
-  //     display: none;
-  //   }
-
+.registration__donut {
   @media screen and (min-width: 768px) {
     background-image: url('../images/background/background_desktop/background_donut-registration_desktop.png');
     background-size: 200px 200px;
@@ -57,7 +53,7 @@
 //   }
 // }
 
-.registration-block {
+.registration__block {
   margin-left: auto;
   margin-right: auto;
 
@@ -111,7 +107,7 @@
   }
 }
 
-.registration-box {
+.registration__box {
   display: flex;
   flex-direction: column;
   gap: 20px;
