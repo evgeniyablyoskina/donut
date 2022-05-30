@@ -23,12 +23,12 @@ var swiper = new Swiper(".mySwiper", {
   centeredSlides: true,
 
   // Зациклюємо слайдер
-  // loop: true,
+  loop: true,
 
   // Встановлюємо швидкість перелистування слайдів
   speed: 500,
 
-  effect: 'slides',
+  effect: 'slide',
 
   breakpoints: {
     320: {
