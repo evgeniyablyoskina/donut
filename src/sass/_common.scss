@@ -45,7 +45,6 @@ img {
   height: auto;
 }
 
-
 .list {
   list-style: none;
 }
@@ -64,8 +63,8 @@ img {
     padding-left: 20px;
     padding-right: 20px;
   }
-  @media screen and (min-width: 768px) {
-    width: 768px;
+  @media screen and (min-width: 767.98px) {
+    width: 634px;
     padding-left: 32px;
     padding-right: 32px;
   }
@@ -166,16 +165,15 @@ img {
   overflow: hidden;
 }
 
-.title{
+.title {
   font-family: 'Caveat Brush', cursive;
   font-weight: 400;
   font-size: 24px;
   line-height: 1.25;
   color: $title-color;
-  
+
   @media screen and (min-width: 1280px) {
     font-size: 36px;
     line-height: 1.8;
-  
   }
 }
