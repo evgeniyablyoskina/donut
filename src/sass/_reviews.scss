@@ -16,7 +16,6 @@
 
 .swiper{
   width: 100%;
-
   overflow: hidden;
 }
 
@@ -28,6 +27,7 @@
 
 .swiper__slide{
   flex-shrink: 0;
+
   @media screen and (min-width:768px) {
     & .swiper__comment{
       display: none;
@@ -47,6 +47,7 @@
       width: 100%;
     }
 
+    // Для правильного відображення коментаря на кожному з слайдів
     &[data-swiper-slide-index="0"] .swiper__comment{
       left: calc(166% + 64px);
     }
@@ -65,11 +66,7 @@
     margin-top: 143px;
 
     & .swiper__comment{
-      // position: absolute;
-      // left: calc(100% + 32px);
-
       display: block;
-      // width: 100%;
     }
   }
 }
@@ -85,17 +82,6 @@
     flex-basis: calc((100% - (32px * 2) - 394px) / 2);
   }
 }
-
-// .swiper-slide-prev{
-//   & .swiper__comment{
-//     transform: translateX(50%);
-//   }
-// }
-
-// .swiper-slide-next{
-  
-// }
-
 
 .swiper__image{
   margin-bottom: 8px;
