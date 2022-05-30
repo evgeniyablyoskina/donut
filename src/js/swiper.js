@@ -9,12 +9,11 @@ var swiper = new Swiper(".swiper", {
     type: 'fraction',
   },
 
-  // autoplay: {
-  //   delay: 3000,
-  // },
-  
-  // Змінити курсор при перетаскуванні слайду (на ПК)
-  grabCursor: true,
+  autoplay: {
+    delay: 3000,
+  },
+
+  // allowTouchMove: false,
   
   // Відступ між слайдами
   spaceBetween: 32,
@@ -44,3 +43,46 @@ var swiper = new Swiper(".swiper", {
     },
   }
 });
+
+// var swiper = new Swiper(".mySwiper", {
+//   // Підключення пагінації
+//   pagination: {
+//     el: '.swiper-pagination',
+//     // Пагінація типу фракції ([поточний слайд/загальна кіль-ть] в цифрах)
+//     type: 'fraction',
+//   },
+
+//   // autoplay: {
+//   //   delay: 3000,
+//   // },
+  
+//   // Змінити курсор при перетаскуванні слайду (на ПК)
+//   grabCursor: true,
+  
+//   // Відступ між слайдами
+//   spaceBetween: 32,
+  
+//   // Встановлюємо активний стартовий слайд
+//   initialSlide: 1,
+
+//   // Встановлюємо активний слайд по центру
+//   centeredSlides: true,
+
+//   // Зациклюємо слайдер
+//   loop: true,
+
+//   // Встановлюємо швидкість перелистування слайдів
+//   speed: 500,
+
+//   effect: 'slides',
+//   // Налаштування слайдера під адаптив
+//   breakpoints: {
+//     320: {
+//       // Кіль-то слайдів для показу
+//       slidesPerView: 1,
+//     },
+//     768: {
+//       slidesPerView: 3,
+//     },
+//   },
+// });
