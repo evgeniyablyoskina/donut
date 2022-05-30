@@ -1,0 +1,149 @@
+.registration {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 82px 21px 32px 23px;
+
+  background: #fffff9;
+  box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15),
+    4px 4px 4px rgba(171, 129, 108, 0.15);
+  border-radius: 150px 150px 0px 0px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+
+    padding: 40px 60px 66px 62px;
+
+    border-radius: 150px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+  }
+}
+
+.registration__title {
+  display: block;
+  width: 100%;
+
+  text-align: center;
+
+  font-family: 'Caveat Brush';
+  font-weight: 400;
+  font-size: 24px;
+  color: #2e2520;
+
+  @media screen and (max-width: 767px) {
+    transform: translateY(200%);
+
+    line-height: calc(30 / 24);
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 8px;
+    margin-top: 40px;
+    line-height: calc(65 / 24);
+  }
+}
+
+.registration-common {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media screen and (max-width: 767px) {
+    // margin-top: 82px;
+  }
+}
+
+.registration__location {
+  @media screen and (min-width: 768px) {
+  }
+}
+
+.registration__location,
+.registration__price {
+  display: block;
+  width: 100%;
+  text-align: center;
+
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  color: #2e2520;
+}
+
+.line {
+  display: block;
+  width: 100%;
+  border: 1px solid rgba(171, 129, 108, 0.5);
+}
+
+.registration-form__title {
+  margin-bottom: 20px;
+  margin-top: 8px;
+
+  text-align: center;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+
+  color: #2e2520;
+}
+
+.registration-form__block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.registration-form__input {
+  display: block;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #ab816c;
+  color: #ab816c;
+
+  &:focus-within,
+  &:hover,
+  &:focus {
+    border-radius: 4px;
+    background-color: #fffff9;
+    box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15),
+      4px 4px 4px rgba(171, 129, 108, 0.15);
+    // border-color: 1px solid #ab816c;
+    // background-color: #ab816c;
+    cursor: pointer;
+  }
+
+  &::placeholder {
+    padding-bottom: 2px;
+
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    color: rgba(171, 129, 108, 0.5);
+  }
+}
+
+.registration__button {
+  display: block;
+
+  @media screen and (max-width: 767px) {
+    margin-top: 12px;
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1280px) {
+  }
+}
