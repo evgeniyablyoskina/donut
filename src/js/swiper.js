@@ -39,7 +39,7 @@ var swiper = new Swiper(".swiper", {
     },
     768: {
       // Кіль-то слайдів для показу
-      slidesPerView: 1,
+      slidesPerView: 3,
     },
   }
 });
