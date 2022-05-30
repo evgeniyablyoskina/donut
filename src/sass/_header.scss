@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 .header__container {
   position: relative;
   display: flex;
@@ -13,12 +14,39 @@
   @media screen and (min-width: 768px) {
     margin-top: 35px;
     margin-left: 0;
+=======
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  position: relative;
+  display: flex;
+
+  @media screen and (min-width: 1200px) {
+    align-items: center;
+  }
+}
+
+.logo {
+  text-decoration: none;
+  background-color: red;
+  margin-top: 8px;
+  margin-left: calc(100% / 2 - 48px);
+
+  @media screen and (min-width: 768px) {
+    margin-top: 35px;
+    margin-left: 33px;
+    // МАРДЖИН 0 ДОЛЖЕН БЫТЬ ТАК КАК ЛЕВЫЙ ОТСТУП ДОЛЖЕН ДАТЬ КОНТЕЙНЕР
+>>>>>>> Stashed changes
   }
 
   @media screen and (min-width: 1200px) {
     margin-top: 37px;
   }
 
+<<<<<<< Updated upstream
   &__ico {
     width: 96px;
     height: 45px;
@@ -26,6 +54,21 @@
     @media screen and (min-width: 1200px) {
       width: 158px;
       height: 82px;
+=======
+  &__iconSmoll {
+    display: block;
+
+    @media screen and (min-width: 1200px) {
+      display: none;
+    }
+  }
+
+  &__iconBig {
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+      display: block;
+>>>>>>> Stashed changes
     }
   }
 }
@@ -39,7 +82,11 @@
     align-items: center;
     text-align: center;
     width: 100%;
+<<<<<<< Updated upstream
     min-height: 100vh;
+=======
+    min-height: 100vw;
+>>>>>>> Stashed changes
     right: 0px;
     top: 0px;
 
@@ -55,7 +102,11 @@
   }
 
   &::before {
+<<<<<<< Updated upstream
     content: url('../images/logo.svg');
+=======
+    content: url('./logo.svg');
+>>>>>>> Stashed changes
     display: inline-block;
     width: 190px;
     height: 85px;
@@ -63,6 +114,11 @@
     margin-top: 20px;
     margin-bottom: 40px;
 
+<<<<<<< Updated upstream
+=======
+    background-color: green;
+
+>>>>>>> Stashed changes
     @media screen and (min-width: 1200px) {
       display: none;
     }
@@ -70,6 +126,11 @@
 
   &__button {
     display: inline-flex;
+<<<<<<< Updated upstream
+=======
+    margin-top: 20px;
+    margin-right: 20px;
+>>>>>>> Stashed changes
     margin-left: auto;
     padding: 0;
 
@@ -108,8 +169,19 @@
     @media screen and (max-width: 1199px) {
       margin: 40px 0;
 
+<<<<<<< Updated upstream
       &:first-child .site-nav__link {
         color: $nav-hover-color;
+=======
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+
+      &:first-child .site-nav__link {
+        color: #876655;
+>>>>>>> Stashed changes
       }
 
       &:first-child {
@@ -124,18 +196,35 @@
       &:not(:last-child) {
         margin-right: 20px;
       }
+<<<<<<< Updated upstream
+=======
+
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+>>>>>>> Stashed changes
     }
   }
 
   &__link {
     text-decoration: none;
+<<<<<<< Updated upstream
     color: $nav-color;
+=======
+    color: #2e2520;
+>>>>>>> Stashed changes
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
+<<<<<<< Updated upstream
       color: $nav-hover-color;
+=======
+      color: #876655;
+>>>>>>> Stashed changes
     }
   }
 }
