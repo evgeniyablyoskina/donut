@@ -1,7 +1,25 @@
-.registration {
+.registration-section {
+  @media screen and (max-width: 767px) {
+    padding-top: 32px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 40px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 60px;
+    padding-left: 232px;
+    padding-right: 232px;
+  }
+}
+
+.registration-block {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 32px;
 
   display: flex;
   flex-direction: column;
@@ -31,31 +49,22 @@
 .registration__title {
   display: block;
   width: 100%;
-
   text-align: center;
-
-  font-family: 'Caveat Brush';
-  font-weight: 400;
-  font-size: 24px;
-  line-height: calc(30 / 24);
 
   color: #2e2520;
 
   @media screen and (max-width: 767px) {
-    transform: translateY(200%);
+    position: absolute;
+    left: 0;
+    transform: translateY(100%);
   }
 
   @media screen and (min-width: 768px) {
     margin-bottom: 8px;
-    margin-top: 40px;
-
     line-height: calc(65 / 24);
   }
   @media screen and (min-width: 1280px) {
     margin-bottom: 16px;
-    margin-top: 60px;
-    font-size: 36px;
-    line-height: calc(65 / 36);
   }
 }
 
@@ -92,7 +101,7 @@
   border: 1px solid rgba(171, 129, 108, 0.5);
 }
 .line-mobile {
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
+  @media screen and (min-width: 768px) {
     display: none;
   }
 }
@@ -100,8 +109,11 @@
   @media screen and (max-width: 1279px) {
     display: none;
   }
-  display: block;
+  display: flex;
   transform: rotate(90deg);
+  position: absolute;
+  left: 27%;
+
   width: 190px;
 }
 
@@ -132,7 +144,6 @@
   flex-direction: column;
   gap: 20px;
 }
-
 .registration-form__label {
   display: block;
 }
