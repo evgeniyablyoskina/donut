@@ -1,97 +1,79 @@
 .footer {
   position: relative;
   overflow: hidden;
-}
-
-.container__footer {
   padding-top: 47px;
   padding-bottom: 19px;
-
+}
+.container__footer {
   @media screen and (min-width: 768px) and (max-width: 1280px) {
     padding-top: 50px;
     padding-bottom: 21px;
   }
-
   @media screen and (min-width: 1280px) {
     padding-top: 82px;
     padding-bottom: 21px;
   }
 }
-
 .footer-social__link {
   background-color: transparent;
 }
-
-.social-links__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
+// .social-links__link {
+// display: flex;
+// justify-content: center;
+// align-items: center;
+// }
 .footer__contacts {
   display: flex;
   justify-content: space-between;
   margin-top: 34px;
-
   @media screen and (min-width: 768px) and (max-width: 1280px) {
     margin-top: 51px;
   }
-
   @media screen and (min-width: 1280px) {
     margin-top: 35px;
   }
 }
-
 .contacts__icon {
   fill: currentColor;
 }
-
+.contacts__item {
+  margin: auto;
+}
 .contacts__link {
   font-size: 16px;
   line-height: 1.25;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
   &:hover,
   &:focus {
     color: var(--hover-button-color);
   }
-
   &:focus {
     outline: 1px solid #575655;
   }
 }
-
-.contacts__item{
-   z-index: 1;
-}
 .footer__contacts::after {
   content: '';
   position: absolute;
-  z-index: 0;
+  z-index: -1;
   width: 113px;
   height: 99px;
   right: -26px;
   bottom: -35px;
   background-repeat: no-repeat;
   background-size: contain;
-
   background-image: url(../images/background/background_mobile/background_flour_mobile.png);
-
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: url(../images/background/background_mobile/background_flour_mobile_2x.png);
   }
-
   @media screen and (min-width: 768px) and (max-width: 1280px) {
     width: 207px;
     height: 182px;
     right: -60px;
     bottom: -38px;
-
     background-image: url(../images/background/background_tablet/background_flour_tablet.png);
-
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -99,15 +81,12 @@
       background-image: url(../images/background/background_tablet/background_flour_tablet_2x.png);
     }
   }
-
   @media screen and (min-width: 1280px) {
     width: 362px;
-    height: 308px;
+    height: 318px;
     right: -43px;
     bottom: -134px;
-
     background-image: url(../images/background/background_desktop/background_flour_desktop.png);
-
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
