@@ -7,7 +7,7 @@
   padding-top: 47px;
   padding-bottom: 19px;
 
-  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
     padding-top: 50px;
     padding-bottom: 21px;
   }
@@ -22,12 +22,18 @@
   background-color: transparent;
 }
 
+.social-links__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .footer__contacts {
   display: flex;
   justify-content: space-between;
   margin-top: 34px;
 
-  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
     margin-top: 51px;
   }
 
@@ -75,7 +81,7 @@
     background-image: url(../images/background/background_mobile/background_flour_mobile_2x.png);
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
     width: 207px;
     height: 182px;
     right: -60px;
