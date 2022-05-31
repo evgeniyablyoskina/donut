@@ -44,9 +44,10 @@
 // back top and
 
 // back bottom
+
 .bg-bottom {
    display: block;
-   // z-index: 0;
+   z-index: 0;
    background-repeat: no-repeat;
    background-size: 100% 1335px;
    background-image: url(../images/background/background_mobile/background_bottom_mobile.png);
@@ -135,10 +136,8 @@
 // donut and
 
 // registration img
-.registration-section {
-   position: relative;
-   z-index: 1000;
-  
+.registration {
+   z-index: 10;  
 }
 
 .registration__donut {
