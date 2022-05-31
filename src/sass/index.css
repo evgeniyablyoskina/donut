@@ -915,9 +915,60 @@ label:focus, label:hover {
 }
 
 .registration {
+  position: relative;
+}
+@media screen and (max-width: 767px) {
+  .registration {
+    padding-top: 32px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .registration {
+    padding-top: 40px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .registration {
+    padding-top: 60px;
+    padding-left: 232px;
+    padding-right: 232px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .registration__donut {
+    background-image: url("../images/background/background_desktop/background_donut-registration_desktop.png");
+    background-size: 200px 200px;
+    width: 1280px;
+    height: 100%;
+    background-position: left;
+    background-repeat: no-repeat;
+    position: absolute;
+    transform: translate(-9%, -40%);
+    z-index: -1;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .registration__donut {
+    background-image: url("../images/background/background_desktop/background_donut-registration_desktop.png");
+    background-size: 200px 200px;
+    width: 1280px;
+    height: 100%;
+    background-position: left;
+    background-repeat: no-repeat;
+    position: absolute;
+    transform: translate(-9%, -40%);
+    z-index: -1;
+  }
+}
+
+.registration__block {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -928,7 +979,7 @@ label:focus, label:hover {
   border-radius: 150px 150px 0px 0px;
 }
 @media screen and (min-width: 768px) {
-  .registration {
+  .registration__block {
     flex-direction: row;
     gap: 56px;
     padding: 40px 60px 66px 62px;
@@ -936,8 +987,8 @@ label:focus, label:hover {
   }
 }
 @media screen and (min-width: 1280px) {
-  .registration {
-    padding: 40px 60px 66px 62px;
+  .registration__block {
+    padding: 35px 60px 35px 60px;
   }
 }
 
@@ -945,34 +996,31 @@ label:focus, label:hover {
   display: block;
   width: 100%;
   text-align: center;
-  font-family: "Caveat Brush";
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 1.25;
   color: #2e2520;
 }
 @media screen and (max-width: 767px) {
   .registration__title {
-    transform: translateY(200%);
+    position: absolute;
+    left: 0;
+    transform: translateY(100%);
   }
 }
 @media screen and (min-width: 768px) {
   .registration__title {
     margin-bottom: 8px;
-    margin-top: 40px;
+    font-size: 24px;
     line-height: 2.7083333333;
   }
 }
 @media screen and (min-width: 1280px) {
   .registration__title {
     margin-bottom: 16px;
-    margin-top: 60px;
     font-size: 36px;
     line-height: 1.8055555556;
   }
 }
 
-.registration-common {
+.registration__box {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -1009,16 +1057,15 @@ label:focus, label:hover {
   border: 1px solid rgba(171, 129, 108, 0.5);
 }
 
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) {
   .line-mobile {
     display: none;
   }
 }
 
 .line-desktop {
-  display: block;
-  transform: rotate(90deg);
-  width: 190px;
+  height: 190px;
+  width: 1px;
 }
 @media screen and (max-width: 1279px) {
   .line-desktop {
