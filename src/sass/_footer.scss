@@ -1,12 +1,11 @@
 .footer {
   position: relative;
   overflow: hidden;
+  padding-top: 47px;
+  padding-bottom: 19px;
 }
 
 .container__footer {
-  padding-top: 47px;
-  padding-bottom: 19px;
-
   @media screen and (min-width: 768px) and (max-width: 1280px) {
     padding-top: 50px;
     padding-bottom: 21px;
@@ -44,6 +43,10 @@
 
 .contacts__icon {
   fill: currentColor;
+}
+
+.contacts__item {
+  margin: auto;
 }
 
 .contacts__link {
