@@ -55,10 +55,13 @@
   }
 }
 
+.contacts__item{
+   z-index: 1;
+}
 .footer__contacts::after {
   content: '';
   position: absolute;
-  z-index: -1;
+  z-index: 0;
   width: 113px;
   height: 99px;
   right: -26px;
@@ -93,7 +96,7 @@
 
   @media screen and (min-width: 1280px) {
     width: 362px;
-    height: 318px;
+    height: 308px;
     right: -43px;
     bottom: -134px;
 
