@@ -19,28 +19,39 @@
   }
 }
 
-.registration__donut {
-  @media screen and (min-width: 768px) {
-    background-image: url('../images/background/background_desktop/background_donut-registration_desktop.png');
-    background-size: 200px 200px;
-    width: 200px;
-    height: 200px;
-    background-position: left;
-    background-repeat: no-repeat;
-    position: absolute;
-    transform: translate(-30%, -30%);
-    z-index: -1;
+// .registration__donut {
+//   @media screen and (min-width: 768px) {
+//     background-image: url('../images/background/background_desktop/background_donut-registration_desktop.png');
+//     background-size: 200px 200px;
+//     width: 1280px;
+//     height: 100%;
+//     background-position: left;
+//     background-repeat: no-repeat;
+//     position: absolute;
+//     transform: translate(-9%, -40%);
 
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      & {
-        background: url('../images/background/background_desktop/background_donut-registration_desktop_2x.png');
-        background-size: 200px 200px;
-      }
-    }
-  }
-}
+//   }
+
+//   @media screen and (min-width: 1280px) {
+//     background-image: url('../images/background/background_desktop/background_donut-registration_desktop.png');
+//     background-size: 200px 200px;
+//     width: 1280px;
+//     height: 100%;
+//     background-position: left;
+//     background-repeat: no-repeat;
+//     position: absolute;
+//     transform: translate(-9%, -40%);
+//     z-index: -1;
+//   }
+// }
+// @media (min-device-pixel-ratio: 2),
+//   (min-resolution: 192dpi),
+//   (min-resolution: 2dppx) {
+//   .registration-section__donut {
+//     background: url('../images/background/background_desktop/background_donut-registration_desktop_2x.png');
+//     background-size: 196px 200px;
+//   }
+// }
 
 .registration__block {
   margin-left: auto;

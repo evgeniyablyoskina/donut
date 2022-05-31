@@ -1,26 +1,37 @@
 <!--  --------------- Contact  -->
 
-<section>
-    <div class="container">
-        <div class="contact">
-            <h2 class="title contact__title">Contact</h2>
-            <form class="contact__form">
-                <h3 class="contact__form-title">We will answer any question!</h3>
-                    <div class="contact__form-block">
-                        <label class="contact__form-label" for="feedback">
-                        
-                            <input class="contact__form-input" type="email" name="feedback" id="feedback" placeholder="Email" required">
-                         </label>
-                   
-                            <label class="contact__form-label" for="feedback">
-                            <input class="contact__form-input" type="text" name="feedback" id="feedback" minlength="3" maxlength="50" step="1" placeholder="Type your question">
-                         </label>
-                     </div>
-                    <button class="button" type="submit">Send</button>
-            </form>
-        </div>
-    </div>
-</section>
+<section class="contact">
+  <div class="container" id="contacts">
+    <h2 class="title contact__title">Contact</h2>
+    <form class="form__contact">
+      <p class="form__title--contact">We will answer any question!</p>
+      <div class="form__block--contact">
+        <label class="form__label--contact" for="mail">
+          <input
+            class="form__input"
+            type="email"
+            name="mail"
+            id="mail"
+            placeholder="Email"
+          />
+        </label>
 
+        <label class="form__label--contact" for="feedback">
+          <input
+            class="form__input"
+            type="text"
+            name="feedback"
+            id="feedback"
+            minlength="3"
+            maxlength="50"
+            step="1"
+            placeholder="Type your question"
+          />
+        </label>
+      </div>
+      <button class="button" type="submit">Send</button>
+    </form>
+  </div>
+</section>
 
 <!--  END Contact  -->
