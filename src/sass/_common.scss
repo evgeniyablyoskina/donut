@@ -70,83 +70,77 @@ img {
   }
   @media screen and (min-width: 1280px) {
     width: 1280px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
 .button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 145px;
   height: 40px;
 
+  border: none;
   border-radius: 25px;
-  padding: 0px;
+
   font-family: 'Caveat Brush', cursive;
-  font-style: normal;
-  font-weight: 400;
   font-size: 18px;
   line-height: 1.2;
   text-align: center;
-  cursor: pointer;
 
+  cursor: pointer;
   color: $button-text-color;
   background-color: $button-bg-color;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  @media screen and (min-width: 1279.98px) {
+  transition: transform $tr-duration $tr-function;
+
+  @media screen and (min-width: 1280px) {
     width: 158px;
     height: 45px;
 
     font-size: 24px;
-    line-height: 1.2;
+    line-height: 1.25;
   }
 
   &:focus,
   &:hover {
+    background-color: $button-hover-color;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
-    background-color: var(--hover-button-color);
-
-    &:focus {
-      outline: 1px solid #575655;
-    }
+  }
+  &:active {
+    background: $button-click-color;
+    transform: scale(0.95);
   }
 }
 
-.social-links {
+.social {
   display: flex;
   justify-content: center;
   align-items: center;
+  list-style: none;
+}
+.social__item:not(:last-child) {
+  margin-right: 16px;
+}
 
-  &__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5px;
-    border-radius: 50%;
-    fill: $primary-text-color;
+.social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+  width: 100%;
+  height: 100%;
+}
 
-  &__icon {
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+.social__icon {
+  fill: $social-icon-color;
+  transition: fill $tr-duration $tr-function,
+    transform $tr-duration $tr-function;
 
-  &link:focus,
-  &link:hover {
-    fill: $primary-bg-color;
-    background-color: $button-hover-color;
-  }
-
-  @media screen and (min-width: 1279.98px) {
-    &__link:focus {
-      outline: 1px solid #575655;
-    }
+  &:hover,
+  &:focus {
+    fill: $button-click-color;
+    transform: scale(1.2);
   }
 }
 
@@ -170,10 +164,47 @@ img {
   line-height: 1.25;
   color: $title-color;
 
-  @media screen and (min-width: 1279.98px) {
+  @media screen and (min-width: 1280px) {
     font-size: 36px;
     line-height: 1.8;
   }
+}
+.read-more {
+  color: $pagination-color;
+  font-family: 'Caveat Brush', cursive;
+  line-height: 1.28;
+  padding: 10px 30px;
+  max-width: 200px;
+  margin-top: 16px;
+  display: block;
+  padding: 0;
+  cursor: pointer;
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.extra-text {
+  display: none;
+  @media screen and (min-width: 1280px) {
+    display: block;
+  }
+}
+
+#read-more:checked ~ .extra-text {
+  display: block;
+}
+
+.less {
+  display: none;
+}
+
+#read-more:checked ~ .read-more .more {
+  display: none;
+}
+
+#read-more:checked ~ .read-more .less {
+  display: inline;
 }
 
 .form__input {
