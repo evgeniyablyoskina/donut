@@ -199,8 +199,7 @@ img {
     &:focus {
       border-radius: 4px;
       background-color: #fffff9;
-      box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15),
-        4px 4px 4px rgba(171, 129, 108, 0.15);
+      box-shadow: $form-shadow;
       cursor: pointer;
     }
   }
