@@ -1,10 +1,86 @@
-.reviews__title{
-  margin-bottom: 20px;
+.reviews{
+  padding-bottom: 40px;
+}
 
-  font-family: 'Caveat Brush', cursive;
-  font-size: 24px;
-  line-height: 1.25;
+.reviews__title{
   text-align: center;
+
+  @media screen and (min-width:768px) and (max-width: 1279px) {
+    margin-bottom: -15px;
+  }
+  
+  @media screen and (min-width:1280px) {
+    margin-bottom: 35px;
+  }
+}
+
+.swiper{
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper__wrapper{
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper__slide{
+  flex-shrink: 0;
+
+  @media screen and (min-width:768px) {
+    & .swiper__comment{
+      display: none;
+    }
+  }
+}
+
+.swiper-slide-active{
+  @media screen and (min-width:768px) {
+    flex-basis: 336px;
+    margin-top: 76px;
+
+    & .swiper__comment{
+      position: absolute;
+
+      display: block;
+      width: 100%;
+    }
+
+    // Для правильного відображення коментаря на кожному з слайдів
+    &[data-swiper-slide-index="0"] .swiper__comment{
+      left: calc(166% + 64px);
+    }
+
+    &[data-swiper-slide-index="1"] .swiper__comment{
+      left: calc(100% + 32px);
+    }
+
+    &[data-swiper-slide-index="2"] .swiper__comment{
+      left: calc(134% + 32px);
+    }
+  }
+
+  @media screen and (min-width:1280px) {
+    flex-basis: 394px;
+    margin-top: 143px;
+
+    & .swiper__comment{
+      display: block;
+    }
+  }
+}
+
+
+.swiper-slide-prev,
+.swiper-slide-next{
+  @media screen and (min-width:768px) {
+    flex-basis: calc((100% - (32px * 2) - 336px) / 2);
+  }
+
+  @media screen and (min-width:1280px) {
+    flex-basis: calc((100% - (32px * 2) - 394px) / 2);
+  }
 }
 
 .swiper__image{
@@ -12,6 +88,12 @@
 
   border-radius: 50%;
   object-fit: cover;
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .swiper__rate{
@@ -32,12 +114,22 @@
   font-weight: 500;
   font-style: italic;
   text-align: center;
+
+  @media screen and (min-width:1280px) {
+    font-size: 16px;
+    line-height: 1.25;
+  }
 }
 
 .swiper__comment{
   font-size: 16px;
   line-height: 1.25;
   text-align: center;
+
+  @media screen and (min-width:1280px) {
+    font-size: 18px;
+    line-height: 1.22;
+  }
 }
 
 // Pagination
@@ -67,5 +159,13 @@
 
   &::after{
     margin-left: 12px;
+  }
+
+  @media screen and (min-width:768px) {
+    margin-top: 112px;
+  }
+
+  @media screen and (min-width:1280px) {
+    margin-top: 98px;
   }
 }
