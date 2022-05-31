@@ -1,0 +1,199 @@
+.registration-section {
+  @media screen and (max-width: 767px) {
+    padding-top: 32px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 40px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 60px;
+    padding-left: 232px;
+    padding-right: 232px;
+  }
+}
+
+.registration-block {
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 82px 21px 32px 23px;
+
+  background: #fffff9;
+  box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15),
+    4px 4px 4px rgba(171, 129, 108, 0.15);
+  border-radius: 150px 150px 0px 0px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 56px;
+
+    padding: 40px 60px 66px 62px;
+
+    border-radius: 150px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 40px 60px 66px 62px;
+  }
+}
+
+.registration__title {
+  display: block;
+  width: 100%;
+  text-align: center;
+
+  color: #2e2520;
+
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    left: 0;
+    transform: translateY(100%);
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 8px;
+    line-height: calc(65 / 24);
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 16px;
+  }
+}
+
+.registration-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.registration__location,
+.registration__price {
+  display: block;
+  width: 100%;
+  text-align: center;
+
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  color: #2e2520;
+
+  @media screen and (min-width: 768px) {
+    text-align: right;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 20px;
+    line-height: calc(24 / 20);
+  }
+}
+
+.line {
+  display: block;
+  width: 100%;
+  border: 1px solid rgba(171, 129, 108, 0.5);
+}
+.line-mobile {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.line-desktop {
+  @media screen and (max-width: 1279px) {
+    display: none;
+  }
+  display: flex;
+  transform: rotate(90deg);
+  position: absolute;
+  left: 27%;
+
+  width: 190px;
+}
+
+.registration-form__title {
+  margin-bottom: 20px;
+  margin-top: 8px;
+
+  text-align: center;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+
+  color: #2e2520;
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    text-align: left;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+    line-height: calc(22 / 18);
+  }
+}
+
+.registration-form__block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.registration-form__label {
+  display: block;
+}
+
+.registration-form__input {
+  display: block;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #ab816c;
+  color: #ab816c;
+
+  &:focus-within,
+  &:hover,
+  &:focus {
+    border-radius: 4px;
+    background-color: #fffff9;
+    box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15),
+      4px 4px 4px rgba(171, 129, 108, 0.15);
+    // border-color: 1px solid #ab816c;
+    // background-color: #ab816c;
+    cursor: pointer;
+  }
+
+  &::placeholder {
+    padding-bottom: 2px;
+
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    color: rgba(171, 129, 108, 0.5);
+  }
+}
+
+.registration__button {
+  display: block;
+
+  @media screen and (max-width: 767px) {
+    margin-top: 12px;
+
+    font-weight: 400;
+    font-size: 18;
+    line-height: calc(23 / 18);
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 24;
+    line-height: calc(30 / 24);
+  }
+}
