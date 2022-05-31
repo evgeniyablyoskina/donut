@@ -48,6 +48,7 @@
 // back top and
 
 // back bottom
+
 .bg-bottom {
   display: block;
   // z-index: 0;
@@ -151,9 +152,9 @@
 // donut and
 
 // registration img
-.registration-section {
-  position: relative;
-  z-index: 1000;
+
+.registration {
+   z-index: 10;  
 }
 
 .registration__donut {
