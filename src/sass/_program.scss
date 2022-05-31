@@ -1,13 +1,13 @@
 .program {
   padding-top: 16px;
-  padding-bottom: 50px;
+  // padding-bottom: 50px;
   @media screen and (min-width: 768px) {
     padding-top: 77px;
-    padding-bottom: 77px;
+    // padding-bottom: 77px;
   }
   @media screen and (min-width: 1280px) {
     padding-top: 50px;
-    padding-bottom: 170px;
+    // padding-bottom: 170px;
   }
 }
 
@@ -17,6 +17,8 @@
   }
   @media screen and (min-width: 1280px) {
     max-width: 1280px;
+    padding-left: 107px;
+    padding-right: 107px;
   }
 }
 .program__title {
@@ -29,13 +31,13 @@
 
 .program__description {
   @media screen and (min-width: 768px) {
-    max-width: 336px;
+    max-width: 335px;
   }
   @media screen and (min-width: 1280px) {
     max-width: calc(100% - 642px);
   }
 }
-.program__list {
+.program__schedule {
   display: flex;
   flex-wrap: wrap;
   margin-top: 55px;
@@ -239,20 +241,34 @@
   }
 }
 
+.program__paragraph::before {
+  content: '> ';
+}
+
+.program__list {
+  margin-top: 8px;
+  @media screen and (min-width: 1280px) {
+    margin-top: 20px;
+  }
+}
+
+.program__paragraph,
 .program__text {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   line-height: 1.25;
-  margin-top: 8px;
-  // @media screen and (min-width: 768px) {
-  //   font-size: 18px;
-  // }
   @media screen and (min-width: 1280px) {
     font-size: 18px;
     line-height: 1.22;
-    margin-top: 16px;
   }
 }
+.program__paragraph {
+  margin-bottom: 8px;
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 16px;
+  }
+}
+
 .program__name {
   color: $frame-title-color;
   font-family: 'Caveat Brush', cursive;
