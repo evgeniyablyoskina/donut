@@ -47,14 +47,20 @@
   </head>
   <body>
     <!-- Partials -->
-    <include src="./partials/header.html"></include>
-    <include src="./partials/hero.html"></include>
-    <include src="./partials/about-us.html"></include>
+    <div class="bg-top">
+      <include src="./partials/header.html"></include>
+      <include src="./partials/hero.html"></include>
+      <include src="./partials/about-us.html"></include>
+    </div>
+
     <include src="./partials/program.html"></include>
-    <include src="./partials/reviews.html"></include>
-    <include src="./partials/registration.html"></include>
-    <include src="./partials/contact.html"></include>
-    <include src="./partials/footer.html"></include>
+
+    <div class="bg-bottom">
+      <include src="./partials/reviews.html"></include>
+      <include src="./partials/registration.html"></include>
+      <include src="./partials/contact.html"></include>
+      <include src="./partials/footer.html"></include>
+    </div>
 
     <!-- Scripts -->
     <script src="./js/mobile-menu.js"></script>
