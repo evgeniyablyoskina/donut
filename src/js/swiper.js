@@ -13,7 +13,8 @@ var swiper = new Swiper(".swiper", {
     delay: 3000,
   },
 
-  // allowTouchMove: false,
+  // Заборонити свайпи
+  allowTouchMove: false,
   
   // Відступ між слайдами
   spaceBetween: 32,
