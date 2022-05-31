@@ -9,11 +9,13 @@ var swiper = new Swiper(".swiper", {
     type: 'fraction',
   },
 
+  // Автопрокрутка слайдів
   autoplay: {
     delay: 3000,
   },
 
-  // allowTouchMove: false,
+  // Заборона перетаскувати/свайпати слайди
+  allowTouchMove: false,
   
   // Відступ між слайдами
   spaceBetween: 32,
