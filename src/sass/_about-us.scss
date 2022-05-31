@@ -1,3 +1,9 @@
+.aboutus {
+  @media screen and (min-width: 1280px) {
+    padding-top: 40px;
+  }
+}
+
 .container__aboutus {
   display: block;
   padding-top: 5px;
@@ -12,7 +18,7 @@
 
   @media screen and (min-width: 1280px) {
     max-width: 1033px;
-    padding-top: 111px;
+    padding-top: 71px;
     padding-left: 0px;
     padding-right: 0px;
   }
@@ -20,7 +26,12 @@
 
 .aboutus__image {
   width: 100%;
-  max-width: 501px;
+  @media screen and (min-width: 768px) {
+    max-width: 359px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 501px;
+  }
 }
 
 .aboutus__box {
@@ -37,8 +48,9 @@
 }
 
 .aboutus__desc {
-  margin-top: 16px;
-  margin-bottom: 16px;
+  @media screen and (max-width: 768px) {
+    padding-top: 16px;
+  }
 
   @media screen and (min-width: 768px) {
     width: calc((100% - 16px) / 2);
@@ -47,7 +59,6 @@
 
   @media screen and (min-width: 1280px) {
     max-width: 392px;
-    margin-bottom: 0px;
     margin-left: 139px;
   }
 }
@@ -76,4 +87,16 @@
     font-size: 18px;
     line-height: 1.22;
   }
+}
+
+#aboutus:checked ~ .extra-text {
+  display: block;
+}
+
+#aboutus:checked ~ .read-more .more {
+  display: none;
+}
+
+#aboutus:checked ~ .read-more .less {
+  display: inline;
 }
