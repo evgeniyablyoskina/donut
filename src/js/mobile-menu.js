@@ -9,3 +9,13 @@
     mobileMenuRef.classList.toggle('is-open');
   });
 })();
+
+const menuLinks = document.querySelectorAll('.site-nav__link');
+menuLinks.forEach(menuLink => {
+  menuLink.addEventListener('click', () => {
+    const mobileMenuRef = document.querySelector('[data-menu]');
+    if(mobileMenuRef.classList.contains('is-open')){
+      mobileMenuRef.classList.remove('is-open');
+    }
+  });
+});

@@ -4,3 +4,206 @@
     background-repeat: no-repeat;
   }
 }
+
+// back top
+.bg-top {
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-image: url(../images/background/background_mobile/background_top_mobile.png);
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .bg-top {
+    background-image: url(../images/background/background_mobile/background_top_mobile_2x.png);
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-top {
+    background-image: url(../images/background/background_tablet/background_top_tablet.png);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .bg-top {
+      background-image: url(../images/background/background_tablet/background_top_tablet_2x.png);
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .bg-top {
+    background-image: url(../images/background/background_desktop/background_top_desktop.png);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .bg-top {
+      background-image: url(../images/background/background_desktop/background_top_desktop_2x.png);
+    }
+  }
+}
+// back top and
+
+// back bottom
+
+.bg-bottom {
+  display: block;
+  // z-index: 0;
+  background-repeat: no-repeat;
+  background-size: 100% 1335px;
+  background-image: url(../images/background/background_mobile/background_bottom_mobile.png);
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .bg-bottom {
+    background-image: url(../images/background/background_mobile/background_bottom_mobile_2x.png);
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-bottom {
+    background-size: 100% 1512px;
+    background-image: url(../images/background/background_tablet/background_bottom_tablet.png);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .bg-bottom {
+      background-image: url(../images/background/background_tablet/background_bottom_tablet_2x.png);
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .bg-bottom {
+    background-size: 100% 1861px;
+    background-image: url(../images/background/background_desktop/background_bottom_desktop.png);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .bg-bottom {
+      background-image: url(../images/background/background_desktop/background_bottom_desktop_2x.png);
+    }
+  }
+}
+// back bottom and
+// donut top
+.donut {
+  position: absolute;
+  display: block;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  width: 120px;
+  height: 114px;
+  z-index: 0;
+  background-size: cover;
+  background-image: url(../images/mobile/donuts_mobile.png);
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .donut {
+    background-image: url(../images/mobile/donuts_mobile_2x.png);
+  }
+}
+
+@media (min-width: 768px) {
+  .donut {
+    top: 0;
+    right: 100px;
+    width: 380px;
+    height: 361px;
+    left: auto;
+    background-image: url(../images/tablet/donuts_tablet.png);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .donut {
+      background-image: url(../images/tablet/donuts_tablet_2x.png);
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .donut {
+    top: 0;
+    right: 0;
+    width: 716px;
+    height: 661px;
+    background-image: url(../images/desktop/donuts_desktop.png);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .donut {
+      background-image: url(../images/desktop/donuts_desktop_2x.png);
+    }
+  }
+}
+
+// donut and
+
+// registration img
+
+.registration {
+   z-index: 10;  
+}
+
+.registration__donut {
+  z-index: -1;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+
+    position: absolute;
+    top: 25px;
+    left: 0px;
+
+    &__img {
+      width: 235px;
+      height: 235px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    left: 130px;
+    top: 88px;
+    &__img {
+      width: 250px;
+      height: 250px;
+    }
+  }
+}
+.registration__confetti {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: 160px;
+
+    &__img {
+      width: 380px;
+      height: 380px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 100px;
+    &__img {
+      width: 600px;
+      height: 600px;
+    }
+  }
+}
+// registration img and
