@@ -15,3 +15,30 @@ window.onscroll = () => {
     btnScroll.classList.add('to-top--hide');
   }
 }
+
+const formList = document.querySelectorAll('.form__contact, .registration-form');
+const popUp = document.querySelector('.pop-up');
+// Сворюємо подію кліку для кожної форми
+formList.forEach(formItem => {
+  formItem.addEventListener('submit', (event) => {
+    // Відміняємо сабміт форми
+    event.preventDefault();
+
+    // Тут ми визначаємо яка форма була відправлена
+    if(formItem === '.form__contact'){
+      let text = 'Ваш вопрос отправлен!';
+    } else {
+      let text = 'Регистрация прошла успешно';
+    }
+
+    // Показуємо pop-up
+    popUp.innerHTML = text;
+    popUp.classList.remove('pop-up--hide');
+    // Через 2 секунди ховаємо pop-up
+    setTimeout(
+      () => {
+        popUp.classList.add('pop-up--hide')
+      }, 2000
+    );
+  });
+});
