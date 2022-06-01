@@ -1,6 +1,8 @@
 .registration {
   position: relative;
+}
 
+.registration__container {
   @media screen and (max-width: 767px) {
     padding-top: 32px;
     padding-left: 20px;
@@ -12,6 +14,7 @@
     padding-left: 32px;
     padding-right: 32px;
   }
+
   @media screen and (min-width: 1280px) {
     padding-top: 60px;
     padding-left: 232px;
