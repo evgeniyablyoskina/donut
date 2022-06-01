@@ -35,13 +35,15 @@
     display: none;
     margin-left: auto;
 
-    position: absolute;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
     align-items: center;
     text-align: center;
-    width: 100%;
-    min-height: 100vh;
-    right: 0px;
-    top: 0px;
+    overflow: hidden;
 
     background: rgba(254, 243, 228, 0.9);
     backdrop-filter: blur(4px);
@@ -100,7 +102,6 @@
 .site-nav {
   @media screen and (min-width: 1200px) {
     display: flex;
-    margin-top: 35px;
     margin-left: 162px;
   }
 

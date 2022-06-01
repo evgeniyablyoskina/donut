@@ -1,30 +1,32 @@
+.aboutus {
+  @media screen and (min-width: 1280px) {
+    padding-top: 40px;
+  }
+}
+
 .container__aboutus {
   display: block;
-  margin-top: 5px;
+  padding-top: 5px;
 
   @media screen and (min-width: 768px) {
     display: flex;
-    width: 100%;
     justify-content: space-between;
     align-items: center;
-    margin-top: 69px;
-    margin-bottom: 40px;
+    padding-top: 69px;
   }
 
   @media screen and (min-width: 1280px) {
-    max-width: 1033px;
-    margin-top: 111px;
-    margin-bottom: 22px;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-top: 71px;
   }
 }
 
 .aboutus__image {
   width: 100%;
-  max-width: 501px;
-
   @media screen and (min-width: 768px) {
+    max-width: 359px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 501px;
   }
 }
 
@@ -33,26 +35,21 @@
 
   @media screen and (min-width: 768px) {
     width: calc((100% - 16px) / 2);
-    margin-right: 16px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    margin-right: 0px;
   }
 }
 
 .aboutus__desc {
-  margin-top: 16px;
-  margin-bottom: 16px;
+  @media screen and (max-width: 768px) {
+    padding-top: 16px;
+  }
 
   @media screen and (min-width: 768px) {
     width: calc((100% - 16px) / 2);
-    margin-left: 16px;
+    margin-left: 32px;
   }
 
   @media screen and (min-width: 1280px) {
     max-width: 392px;
-    margin-bottom: 0px;
     margin-left: 139px;
   }
 }
@@ -83,47 +80,14 @@
   }
 }
 
-#check {
-  display: none;
-}
-
-.content {
-  display: none;
-  transition: 0.5s linear;
-
-  @media screen and (min-width: 1280px) {
-    display: block;
-  }
-}
-
-label {
-  display: inline-block;
-  font-family: 'Caveat Brush', cursive;
-  font-size: 18px;
-  line-height: 1.22px;
-  color: $button-bg-color;
-  text-align: left;
-
-  @media screen and (min-width: 1280px) {
-    display: none;
-  }
-
-  &:focus,
-  &:hover {
-    color: $button-click-color;
-  }
-}
-
-#check:checked ~ .content {
+#aboutus:checked ~ .extra-text {
   display: block;
 }
 
-#check:checked ~ label {
-  visibility: hidden;
+#aboutus:checked ~ .read-more .more {
+  display: none;
 }
 
-#check:checked ~ label:after {
-  content: 'Less';
-  display: block;
-  visibility: visible;
+#aboutus:checked ~ .read-more .less {
+  display: inline;
 }
