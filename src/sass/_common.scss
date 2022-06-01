@@ -143,6 +143,7 @@ img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
+  transform: scale(1);
   color: $social-icon-color;
   transition: fill $tr-duration $tr-function,
     transform $tr-duration $tr-function;
@@ -151,7 +152,7 @@ img {
   &:focus {
     background-color: $button-bg-color;
     color: $button-text-color;
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 }
 
