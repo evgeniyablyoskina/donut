@@ -1,6 +1,6 @@
-.registration {
+.registration__container {
   position: relative;
-
+  z-index: 1;
   @media screen and (max-width: 767px) {
     padding-top: 32px;
     padding-left: 20px;
@@ -12,6 +12,7 @@
     padding-left: 32px;
     padding-right: 32px;
   }
+
   @media screen and (min-width: 1280px) {
     padding-top: 60px;
     padding-left: 232px;
@@ -19,41 +20,36 @@
   }
 }
 
-// .registration__donut {
-//   @media screen and (min-width: 768px) {
-//     background-image: url('../images/background/background_desktop/background_donut-registration_desktop.png');
-//     background-size: 200px 200px;
-//     width: 1280px;
-//     height: 100%;
-//     background-position: left;
-//     background-repeat: no-repeat;
-//     position: absolute;
-//     transform: translate(-9%, -40%);
+.registration__donut {
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background-size: 196px 200px;
+    transform: translate(-5%, 20%);
 
-//   }
+    background-image: url('../images/background/background_desktop/background_donut-registration_desktop.png');
+  }
 
-//   @media screen and (min-width: 1280px) {
-//     background-image: url('../images/background/background_desktop/background_donut-registration_desktop.png');
-//     background-size: 200px 200px;
-//     width: 1280px;
-//     height: 100%;
-//     background-position: left;
-//     background-repeat: no-repeat;
-//     position: absolute;
-//     transform: translate(-9%, -40%);
-//     z-index: -1;
-//   }
-// }
-// @media (min-device-pixel-ratio: 2),
-//   (min-resolution: 192dpi),
-//   (min-resolution: 2dppx) {
-//   .registration-section__donut {
-//     background: url('../images/background/background_desktop/background_donut-registration_desktop_2x.png');
-//     background-size: 196px 200px;
-//   }
-// }
+  @media screen and (min-width: 1280px) {
+    transform: translate(60%, 50%);
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .registration-section__donut {
+    background: url('../images/background/background_desktop/background_donut-registration_desktop_2x.png');
+    background-size: 196px 200px;
+  }
+}
 
 .registration__block {
+  position: relative;
+
   margin-left: auto;
   margin-right: auto;
 
