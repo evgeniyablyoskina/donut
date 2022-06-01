@@ -227,12 +227,11 @@ img {
   display: block;
   border: none;
   outline: none;
+
   border-bottom: 1px solid $rate-star-color;
   width: 100%;
-  height: 22px;
-  color: $rate-star-color;
   line-height: 1.25;
-  ::placeholder {
+  &::placeholder {
     font-size: 16px;
     padding-bottom: 2px;
     color: $form-placeholder-color;
