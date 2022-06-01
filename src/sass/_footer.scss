@@ -53,10 +53,10 @@
 .contacts__link {
   font-size: 16px;
   line-height: 1.25;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color $tr-duration $tr-function;
   &:hover,
   &:focus {
-    color: var(--hover-button-color);
+    color: $button-hover-color;
   }
   &:focus {
     outline: 1px solid #575655;
