@@ -8,6 +8,7 @@
   align-items: center;
   width: 40px;
   height: 40px;
+  padding: 0;
   border:0;
   border-radius: 50%;
 
@@ -28,10 +29,6 @@
     pointer-events: none;
   }
 
-  &__icon{
-    fill: currentColor;
-  }
-
   @media screen and (min-width: 768px) {
     bottom: 50px;
     right: 50px;
@@ -43,5 +40,24 @@
   @media screen and (min-width: 1280px) {
     width: 100px;
     height: 100px;
+  }
+
+  &__icon{
+    // fill: currentColor;
+    display: block;
+    width: 40%;
+    height: 40%;
+    margin-bottom: -10px;
+    border-radius: 3px;
+    border-right: 3px solid #fff;
+    border-top: 3px solid #fff;
+
+    transform: rotate(-45deg);
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: -20px;
+      border-right-width: 5px;
+      border-top-width: 5px;
+    }
   }
 }
