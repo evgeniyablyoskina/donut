@@ -10,17 +10,13 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
-    width: 100%;
     justify-content: space-between;
     align-items: center;
     padding-top: 69px;
   }
 
   @media screen and (min-width: 1280px) {
-    max-width: 1033px;
     padding-top: 71px;
-    padding-left: 0px;
-    padding-right: 0px;
   }
 }
 
@@ -39,11 +35,6 @@
 
   @media screen and (min-width: 768px) {
     width: calc((100% - 16px) / 2);
-    margin-right: 16px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    margin-right: 0px;
   }
 }
 
@@ -54,7 +45,7 @@
 
   @media screen and (min-width: 768px) {
     width: calc((100% - 16px) / 2);
-    margin-left: 16px;
+    margin-left: 32px;
   }
 
   @media screen and (min-width: 1280px) {
