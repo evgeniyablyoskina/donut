@@ -2,14 +2,14 @@
 
 .program {
   padding-top: 16px;
-  // padding-bottom: 50px;
+  padding-bottom: 50px;
   @media screen and (min-width: 768px) {
     padding-top: 77px;
-    // padding-bottom: 77px;
+    padding-bottom: 95px;
   }
   @media screen and (min-width: 1280px) {
     padding-top: 50px;
-    // padding-bottom: 170px;
+    padding-bottom: 170px;
   }
 }
 
@@ -18,9 +18,7 @@
     display: flex;
   }
   @media screen and (min-width: 1280px) {
-    max-width: 1280px;
-    padding-left: 107px;
-    padding-right: 107px;
+    max-width: 1033px;
   }
 }
 
@@ -81,7 +79,7 @@
 .program__schedule {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 55px;
+  margin-top: 60px;
   @media screen and (min-width: 768px) {
     margin-left: 32px;
     margin-top: 0;
