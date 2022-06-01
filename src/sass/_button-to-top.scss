@@ -12,20 +12,22 @@
   border:0;
   border-radius: 50%;
 
+  opacity: 1;
   background-color: rgba(171, 129, 108, .5);
   color: #fff;
   z-index: 10;
   cursor: pointer;
-  transition: background-color .5s, box-shadow $tr-duration;
+  transition-property: opacity, background-color, box-shadow;
+  transition-duration: 1s, $tr-duration, $tr-duration;
   transition-timing-function: $tr-function;
 
-  &:hover, &:focus{
+  &:hover{
     background-color: #876655;
     box-shadow: 0 3px 1px #0000001a, 0 1px 2px #00000014, 0 2px 2px #0000001f;
   }
 
   &--hide{
-    background-color: rgba(171, 129, 108, 0);;
+    opacity: 0;
     pointer-events: none;
   }
 
@@ -43,7 +45,6 @@
   }
 
   &__icon{
-    // fill: currentColor;
     display: block;
     width: 40%;
     height: 40%;
