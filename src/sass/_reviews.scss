@@ -1,5 +1,7 @@
 .reviews__container{
-  width: 1033px;
+  @media screen and (min-width:1280px) {
+    width: 1033px;
+  }
 }
 
 .reviews__title{
