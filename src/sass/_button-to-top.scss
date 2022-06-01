@@ -1,0 +1,47 @@
+.to-top{
+  position: fixed;
+  bottom: 30px;
+  right: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border:0;
+  border-radius: 50%;
+
+  background-color: rgba(171, 129, 108, .5);
+  color: #fff;
+  z-index: 10;
+  cursor: pointer;
+  transition: background-color .5s, box-shadow $tr-duration;
+  transition-timing-function: $tr-function;
+
+  &:hover, &:focus{
+    background-color: #876655;
+    box-shadow: 0 3px 1px #0000001a, 0 1px 2px #00000014, 0 2px 2px #0000001f;
+  }
+
+  &--hide{
+    background-color: rgba(171, 129, 108, 0);;
+    pointer-events: none;
+  }
+
+  &__icon{
+    fill: currentColor;
+  }
+
+  @media screen and (min-width: 768px) {
+    bottom: 50px;
+    right: 50px;
+
+    width: 60px;
+    height: 60px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 100px;
+    height: 100px;
+  }
+}
