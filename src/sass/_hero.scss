@@ -1,15 +1,19 @@
-.container__hero {
-  text-align: center;
+.hero {
   padding-top: 31px;
-
   @media screen and (min-width: 768px) {
     padding-top: 16px;
-
-    text-align: start;
   }
 
   @media screen and (min-width: 1280px) {
     padding-top: 42px;
+  }
+}
+
+.container__hero {
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    text-align: start;
   }
 }
 
@@ -45,13 +49,28 @@
 }
 
 .hero__button {
+  display: block;
+  width: 145px;
+  height: 40px;
+
   margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px 46px;
+
+  text-decoration: none;
 
   @media screen and (min-width: 768px) {
+    margin: 0;
     margin-bottom: 20px;
   }
 
   @media screen and (min-width: 1280px) {
+    width: 158px;
+    height: 45px;
+
+    padding: 7px 44px;
+
     margin-bottom: 32px;
   }
 }
