@@ -1,19 +1,27 @@
 .footer {
   position: relative;
   overflow: hidden;
-  padding-top: 47px;
-  padding-bottom: 19px;
+  padding-top: 32px;
+  padding-bottom: 20px;
 }
-.container__footer {
-  @media screen and (min-width: 768px) and (max-width: 1280px) {
-    padding-top: 50px;
-    padding-bottom: 21px;
-  }
-  @media screen and (min-width: 1280px) {
-    padding-top: 82px;
-    padding-bottom: 21px;
+
+// .container__footer {
+//   @media screen and (min-width: 768px) and (max-width: 1280px) {
+//     padding-top: 50px;
+//     padding-bottom: 21px;
+//   }
+//   @media screen and (min-width: 1280px) {
+//     padding-top: 82px;
+//     padding-bottom: 21px;
+//   }
+// }
+
+.social-footer {
+  @media screen and (min-width: 768px) {
+    justify-content: center;
   }
 }
+
 .footer-social__link {
   background-color: transparent;
 }
@@ -25,20 +33,23 @@
 .footer__contacts {
   display: flex;
   justify-content: space-between;
-  margin-top: 34px;
+  margin-top: 32px;
+
   @media screen and (min-width: 768px) and (max-width: 1280px) {
-    margin-top: 51px;
+    margin-top: 59px;
+    justify-content: space-between;
   }
   @media screen and (min-width: 1280px) {
-    margin-top: 35px;
+    margin-top: 80px;
+    justify-content: space-around;
   }
 }
 .contacts__icon {
   fill: currentColor;
 }
-.contacts__item {
-  margin: auto;
-}
+// .contacts__item {
+//   margin: auto;
+// }
 .contacts__link {
   font-size: 16px;
   line-height: 1.25;
@@ -50,6 +61,14 @@
   &:focus {
     outline: 1px solid #575655;
   }
+  // .contacts__item:first-child {
+  //   @media screen and (min-width: 768px) and (max-width: 1280px) {
+  //     margin-right: 426px;
+  //   }
+  //   @media screen and (min-width: 1280px) {
+  //     margin-right: 620px;
+  //   }
+  // }
 }
 .footer__contacts::after {
   content: '';
@@ -58,9 +77,9 @@
   width: 113px;
   height: 99px;
   right: -26px;
-  bottom: -35px;
+  bottom: -30px;
   background-repeat: no-repeat;
-  background-size: contain;
+  // background-size: contain;
   background-image: url(../images/background/background_mobile/background_flour_mobile.png);
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
@@ -71,8 +90,8 @@
   @media screen and (min-width: 768px) and (max-width: 1280px) {
     width: 207px;
     height: 182px;
-    right: -60px;
-    bottom: -38px;
+    right: -26px;
+    bottom: -63px;
     background-image: url(../images/background/background_tablet/background_flour_tablet.png);
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
@@ -82,10 +101,11 @@
     }
   }
   @media screen and (min-width: 1280px) {
-    width: 362px;
-    height: 318px;
-    right: -43px;
-    bottom: -134px;
+    width: 355px;
+    height: 312px;
+    z-index: 1;
+    right: -60px;
+    bottom: -145px;
     background-image: url(../images/background/background_desktop/background_flour_desktop.png);
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
