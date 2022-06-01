@@ -1,3 +1,5 @@
+// Section styles
+
 .program {
   padding-top: 16px;
   // padding-bottom: 50px;
@@ -21,13 +23,17 @@
     padding-right: 107px;
   }
 }
+
 .program__title {
+  margin-bottom: 8px;
   @extend .title;
   text-align: center;
   @media screen and (min-width: 768px) {
     text-align: left;
   }
 }
+
+// First column
 
 .program__description {
   @media screen and (min-width: 768px) {
@@ -37,6 +43,41 @@
     max-width: calc(100% - 642px);
   }
 }
+
+.program__list {
+  margin-top: 8px;
+  @media screen and (min-width: 1280px) {
+    margin-top: 20px;
+  }
+}
+
+.program__paragraph::before {
+  content: '> ';
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+  }
+}
+
+.program__paragraph,
+.program__text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+    line-height: 1.22;
+  }
+}
+
+.program__paragraph {
+  margin-bottom: 8px;
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 16px;
+  }
+}
+
+// Second column
+
 .program__schedule {
   display: flex;
   flex-wrap: wrap;
@@ -51,6 +92,7 @@
     max-height: 440px;
   }
 }
+
 .program__item {
   position: relative;
   display: block;
@@ -106,7 +148,8 @@
   width: 76px;
   height: 80px;
 }
-// Псевдоэлементы Пончики
+
+// Pseudo-elements Donuts
 
 .program__item:first-child::before {
   background-image: url(../images/mobile/program_type-of-event_mobile.png);
@@ -241,31 +284,20 @@
   }
 }
 
-.program__paragraph::before {
-  content: '> ';
-}
+// Block in thr ring
 
-.program__list {
-  margin-top: 8px;
-  @media screen and (min-width: 1280px) {
-    margin-top: 20px;
-  }
-}
-
-.program__paragraph,
-.program__text {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  line-height: 1.25;
-  @media screen and (min-width: 1280px) {
-    font-size: 18px;
-    line-height: 1.22;
-  }
-}
-.program__paragraph {
-  margin-bottom: 8px;
-  @media screen and (min-width: 1280px) {
-    margin-bottom: 16px;
+.program__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    bottom: 16px;
   }
 }
 
@@ -294,19 +326,5 @@
     font-size: 16px;
     line-height: 1.25;
     margin-top: 16px;
-  }
-}
-.program__block {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  bottom: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  @media screen and (min-width: 768px) {
-    bottom: 16px;
   }
 }
