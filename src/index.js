@@ -24,11 +24,12 @@ formList.forEach(formItem => {
     // Відміняємо сабміт форми
     event.preventDefault();
 
+    let text = '';
     // Тут ми визначаємо яка форма була відправлена
     if(formItem === '.form__contact'){
-      let text = 'Ваш вопрос отправлен!';
+      text = 'Ваш вопрос отправлен!';
     } else {
-      let text = 'Регистрация прошла успешно';
+      text = 'Регистрация прошла успешно';
     }
 
     // Показуємо pop-up
