@@ -6,9 +6,9 @@
 
   //Подія кліку по кнопці
   menuBtnRef.addEventListener('click', () => {
-
     // Отримуємо атрибут aria-expanded
-    const expended = menuBtnRef.getAttribute('aria-expended') === 'true' || false;
+    const expended =
+      menuBtnRef.getAttribute('aria-expended') === 'true' || false;
     // Переключаємо наявність класу is-open на кнопці
     menuBtnRef.classList.toggle('is-open');
     //міняємо значення aria-expanded
@@ -21,9 +21,8 @@
   // Створюємо подію кліку для кожного лінка
   menuLinks.forEach(menuLink => {
     menuLink.addEventListener('click', () => {
-
       // Якщо мобільне меню відкрите закриваємо його і повертаємо бургер кнопку
-      if(mobileMenuRef.classList.contains('is-open')){
+      if (mobileMenuRef.classList.contains('is-open')) {
         mobileMenuRef.classList.remove('is-open');
         menuBtnRef.classList.remove('is-open');
       }

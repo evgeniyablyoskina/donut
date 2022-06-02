@@ -1,5 +1,4 @@
-var swiper = new Swiper(".swiper", {
-  
+var swiper = new Swiper('.swiper', {
   slideClass: 'swiper__slide',
   wrapperClass: 'swiper__wrapper',
   // Підключення пагінації
@@ -15,10 +14,10 @@ var swiper = new Swiper(".swiper", {
 
   // Заборонити свайпи
   allowTouchMove: false,
-  
+
   // Відступ між слайдами
   spaceBetween: 32,
-  
+
   // Встановлюємо активний стартовий слайд
   initialSlide: 1,
 
@@ -42,5 +41,5 @@ var swiper = new Swiper(".swiper", {
       // Кіль-то слайдів для показу
       slidesPerView: 3,
     },
-  }
+  },
 });

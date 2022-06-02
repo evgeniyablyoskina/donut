@@ -5,29 +5,27 @@
   padding-bottom: 20px;
 }
 
-.social-footer {
+.social__footer {
   @media screen and (min-width: 768px) {
     justify-content: center;
   }
 }
 
-.footer-social__link {
-  background-color: transparent;
-}
-.footer__contacts {
+.footer__box {
   margin-top: 32px;
 
   @media screen and (min-width: 768px) and (max-width: 1280px) {
     margin-top: 59px;
     justify-content: space-between;
   }
+
   @media screen and (min-width: 1280px) {
     margin-top: 80px;
     justify-content: space-around;
   }
 }
 
-.contacts__tel {
+.footer__tel {
   display: inline;
 
   margin-right: 59px;
@@ -35,53 +33,67 @@
   @media screen and (min-width: 768px) and (max-width: 1280px) {
     margin-right: 426px;
   }
+
   @media screen and (min-width: 1280px) {
     margin-right: 620px;
     margin-left: 140px;
   }
 }
-.contacts__location {
+
+.footer__location {
   display: inline;
 }
-.contacts__icon {
+
+.footer__icon {
   fill: currentColor;
 }
-.contacts__link {
-  text-align: left;
 
+.footer__link {
+  text-align: left;
   font-size: 16px;
   line-height: 1.25;
+
   transition: color $tr-duration $tr-function;
+
   &:hover,
   &:focus {
     color: $button-hover-color;
   }
+
   &:focus {
     outline: 1px solid #575655;
   }
 }
-.footer__contacts::after {
+
+.footer__box::after {
   content: '';
   position: absolute;
-  z-index: -1;
-  width: 113px;
-  height: 99px;
   right: -26px;
   bottom: -30px;
-  background-repeat: no-repeat;
+  z-index: -1;
+
+  width: 113px;
+  height: 99px;
+
   background-image: url(../images/background/background_mobile/background_flour_mobile.png);
+  background-repeat: no-repeat;
+
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: url(../images/background/background_mobile/background_flour_mobile_2x.png);
   }
+
   @media screen and (min-width: 768px) and (max-width: 1280px) {
-    width: 207px;
-    height: 182px;
     right: -26px;
     bottom: -63px;
+
+    width: 207px;
+    height: 182px;
+
     background-image: url(../images/background/background_tablet/background_flour_tablet.png);
+
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -89,13 +101,17 @@
       background-image: url(../images/background/background_tablet/background_flour_tablet_2x.png);
     }
   }
+
   @media screen and (min-width: 1280px) {
-    width: 355px;
-    height: 312px;
-    z-index: 1;
     right: -60px;
     bottom: -145px;
+    z-index: 1;
+
+    width: 355px;
+    height: 312px;
+
     background-image: url(../images/background/background_desktop/background_flour_desktop.png);
+
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
