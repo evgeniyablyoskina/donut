@@ -225,7 +225,8 @@ img {
   }
 }
 
-#read-more:checked ~ .extra-text {
+#read-more-aboutus:checked ~ .extra-text,
+#read-more-program:checked ~ .extra-text {
   display: block;
 }
 
@@ -233,11 +234,13 @@ img {
   display: none;
 }
 
-#read-more:checked ~ .read-more .read-more__more {
+#read-more-aboutus:checked ~ .read-more .read-more__more,
+#read-more-program:checked ~ .read-more .read-more__more {
   display: none;
 }
 
-#read-more:checked ~ .read-more .read-more__less {
+#read-more-aboutus:checked ~ .read-more .read-more__less,
+#read-more-program:checked ~ .read-more .read-more__less {
   display: inline;
 }
 
