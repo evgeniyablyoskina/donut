@@ -82,15 +82,3 @@
     line-height: 1.22;
   }
 }
-
-#aboutus:checked ~ .extra-text {
-  display: block;
-}
-
-#aboutus:checked ~ .read-more .read-more__more {
-  display: none;
-}
-
-#aboutus:checked ~ .read-more .read-more__less {
-  display: inline;
-}
