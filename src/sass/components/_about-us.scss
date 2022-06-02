@@ -23,9 +23,11 @@
 
 .aboutus__image {
   width: 100%;
+
   @media screen and (min-width: 768px) {
     max-width: 359px;
   }
+
   @media screen and (min-width: 1280px) {
     max-width: 501px;
   }
@@ -85,10 +87,10 @@
   display: block;
 }
 
-#aboutus:checked ~ .read-more .more {
+#aboutus:checked ~ .read-more .read-more__more {
   display: none;
 }
 
-#aboutus:checked ~ .read-more .less {
+#aboutus:checked ~ .read-more .read-more__less {
   display: inline;
 }

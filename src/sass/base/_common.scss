@@ -229,15 +229,15 @@ img {
   display: block;
 }
 
-.less {
+.read-more__less {
   display: none;
 }
 
-#read-more:checked ~ .read-more .more {
+#read-more:checked ~ .read-more .read-more__more {
   display: none;
 }
 
-#read-more:checked ~ .read-more .less {
+#read-more:checked ~ .read-more .read-more__less {
   display: inline;
 }
 
