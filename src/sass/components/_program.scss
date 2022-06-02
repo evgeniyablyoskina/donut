@@ -8,7 +8,7 @@
     padding-bottom: 95px;
   }
   @media screen and (min-width: 1280px) {
-    padding-top: 50px;
+    padding-top: 22px;
     padding-bottom: 170px;
   }
 }
@@ -83,11 +83,11 @@
   @media screen and (min-width: 768px) {
     margin-left: 32px;
     margin-top: 0;
-    max-height: 364px;
+    height: 100%;
   }
   @media screen and (min-width: 1280px) {
     margin-left: 142px;
-    max-height: 440px;
+    padding-top: 53px;
   }
 }
 
@@ -109,7 +109,7 @@
     width: 152px;
     height: 152px;
     margin-right: 31px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
   @media screen and (min-width: 1280px) {
     width: 180px;
@@ -143,12 +143,22 @@
   position: absolute;
   top: 0;
   right: 0;
-  transform: translate(-40%, -50%);
+  transform: translate(-35%, -50%);
   content: '';
   background-size: contain;
   background-repeat: no-repeat;
   width: 76px;
   height: 80px;
+  @media screen and (min-width: 768px) {
+    transform: translate(-54%, -50%);
+    width: 70px;
+    height: 75px;
+  }
+  @media screen and (min-width: 1280px) {
+    transform: translate(-55%, -50%);
+    width: 85px;
+    height: 95px;
+  }
 }
 
 // Pseudo-elements Donuts
@@ -163,8 +173,6 @@
   }
 
   @media screen and (min-width: 768px) {
-    width: 81px;
-    height: 90px;
     background-image: url(../images/tablet/program_type-of-event_tablet.png);
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -175,8 +183,6 @@
   }
 
   @media screen and (min-width: 1281px) {
-    width: 97px;
-    height: 107px;
     background-image: url(../images/desktop/program_type-of-event_desktop.png);
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -196,8 +202,6 @@
   }
 
   @media screen and (min-width: 768px) {
-    width: 81px;
-    height: 90px;
     background-image: url(../images/tablet/program_number-of-gests_tablet.png);
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -208,8 +212,6 @@
   }
 
   @media screen and (min-width: 1281px) {
-    width: 97px;
-    height: 107px;
     background-image: url(../images/desktop/program_number-of-gests_desktop.png);
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -229,8 +231,6 @@
   }
 
   @media screen and (min-width: 768px) {
-    width: 81px;
-    height: 90px;
     background-image: url(../images/tablet/program_time-of-event_tablet.png);
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -241,8 +241,6 @@
   }
 
   @media screen and (min-width: 1281px) {
-    width: 97px;
-    height: 107px;
     background-image: url(../images/desktop/program_time-of-event_desktop.png);
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -262,8 +260,6 @@
   }
 
   @media screen and (min-width: 768px) {
-    width: 81px;
-    height: 90px;
     background-image: url(../images/tablet/program_the-host-speaks_tablet.png);
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -274,8 +270,6 @@
   }
 
   @media screen and (min-width: 1281px) {
-    width: 97px;
-    height: 107px;
     background-image: url(../images/desktop/program_the-host-speaks_desktop.png);
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -291,12 +285,9 @@
 .program__block {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   position: absolute;
   bottom: 10px;
-  margin-left: auto;
-  margin-right: auto;
   width: 100%;
   @media screen and (min-width: 768px) {
     bottom: 16px;
@@ -319,7 +310,7 @@
 .program--small-size {
   font-size: 14;
   text-align: center;
-  margin-top: 4.5px;
+  margin-top: 5px;
   margin-bottom: 8px;
   @media screen and (min-width: 768px) {
     margin-top: 14px;
@@ -328,5 +319,17 @@
     font-size: 16px;
     line-height: 1.25;
     margin-top: 16px;
+  }
+}
+.program__icon {
+  width: 19px;
+  height: 19px;
+  @media screen and (min-width: 768px) {
+    width: 21px;
+    height: 21px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 25px;
+    height: 25px;
   }
 }
