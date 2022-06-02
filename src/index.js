@@ -43,6 +43,7 @@ function checkInputEmpty(formItem){
   // Тут ми визначаємо яка форма була відправлена
   formItem.querySelectorAll('input').forEach(input => {
     notEmptyInputCounter += (input.value != '') ? 1 : 0;
+    input.value = '';
   });
 
   if(formItem.classList[0] === 'form__contact' && notEmptyInputCounter == 2){
