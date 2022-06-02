@@ -26,7 +26,7 @@ formList.forEach(formItem => {
 
     let text = '';
     // Тут ми визначаємо яка форма була відправлена
-    if(formItem === '.form__contact'){
+    if(formItem.classList[0] === 'form__contact'){
       text = 'Ваш вопрос отправлен!';
     } else {
       text = 'Регистрация прошла успешно';
