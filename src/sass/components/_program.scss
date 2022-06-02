@@ -149,6 +149,9 @@
   background-repeat: no-repeat;
   width: 76px;
   height: 80px;
+
+  transition: transform 500ms $tr-function;
+
   @media screen and (min-width: 768px) {
     transform: translate(-54%, -50%);
     width: 70px;
@@ -158,6 +161,16 @@
     transform: translate(-55%, -50%);
     width: 85px;
     height: 95px;
+  }
+}
+.program__item:hover.program__item::before,
+.program__item:focus.program__item::before {
+  transform: translate(-35%, -50%) rotate(90deg);
+  @media screen and (min-width: 768px) {
+    transform: translate(-54%, -50%) rotate(90deg);
+  }
+  @media screen and (min-width: 1280px) {
+    transform: translate(-55%, -50%) rotate(90deg);
   }
 }
 
