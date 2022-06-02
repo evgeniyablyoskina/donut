@@ -1,13 +1,14 @@
-@import './variables';
-@import './common';
+@import './utils/variables';
+@import './base/common';
 
-@import './background_lower';
-@import './header';
-@import './hero';
-@import './about-us';
-@import './program';
-@import './reviews';
-@import './registration';
-@import './contact';
-@import './footer';
-@import './button-to-top';
+@import './components/background_lower';
+@import './components/header';
+@import './components/hero';
+@import './components/about-us';
+@import './components/program';
+@import './components/reviews';
+@import './components/registration';
+@import './components/contact';
+@import './components/footer';
+@import './components/button-to-top';
+@import './components/pop-up';
