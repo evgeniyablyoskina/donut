@@ -156,3 +156,60 @@
 }
 
 // donut and
+
+// registration img
+
+.registration {
+  z-index: 10;
+}
+
+.registration__donut {
+  z-index: -1;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+
+    position: absolute;
+    top: 25px;
+    left: 0px;
+
+    &__img {
+      width: 235px;
+      height: 235px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    left: 130px;
+    top: 88px;
+    &__img {
+      width: 250px;
+      height: 250px;
+    }
+  }
+}
+.registration__confetti {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: 160px;
+
+    &__img {
+      width: 380px;
+      height: 380px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 100px;
+    &__img {
+      width: 600px;
+      height: 600px;
+    }
+  }
+}
+// registration img and
