@@ -1,49 +1,32 @@
+.registration {
+  @media screen and (max-width: 767px) {
+    padding-top: 32px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 60px;
+  }
+}
 .registration__container {
   position: relative;
   z-index: 1;
   @media screen and (max-width: 767px) {
-    padding-top: 32px;
     padding-left: 20px;
     padding-right: 20px;
   }
 
   @media screen and (min-width: 768px) {
-    padding-top: 40px;
     padding-left: 32px;
     padding-right: 32px;
   }
 
   @media screen and (min-width: 1280px) {
-    padding-top: 60px;
     padding-left: 232px;
     padding-right: 232px;
-  }
-}
-
-.registration__donut {
-  @media screen and (min-width: 768px) {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 200px;
-    height: 200px;
-    background-size: 196px 200px;
-    transform: translate(-5%, 20%);
-
-    background-image: url('../images/background/background_desktop/background_donut-registration_desktop.png');
-  }
-
-  @media screen and (min-width: 1280px) {
-    transform: translate(60%, 50%);
-  }
-}
-
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .registration-section__donut {
-    background: url('../images/background/background_desktop/background_donut-registration_desktop_2x.png');
-    background-size: 196px 200px;
   }
 }
 
@@ -251,8 +234,6 @@
     background-color: #fffff9;
     box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15),
       4px 4px 4px rgba(171, 129, 108, 0.15);
-    // border-color: 1px solid #ab816c;
-    // background-color: #ab816c;
     cursor: pointer;
   }
 
@@ -303,17 +284,50 @@
   }
 }
 
-@keyframes button {
-  0% {
-    background-color: $button-bg-color;
-    box-shadow: 0 0 1px $button-bg-color;
+.registration__donut {
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background-size: 196px 200px;
+    transform: translate(-5%, 20%);
+
+    background-image: url('/src/images/background/background_tablet/background_donut-registration_tablet.png');
   }
-  50% {
-    background-color: $button-bg-color;
-    box-shadow: 0 0 2px $button-bg-color;
-  }
-  100% {
-    background-color: $button-bg-color;
-    box-shadow: 0 0 1px $button-bg-color;
+
+  @media screen and (min-width: 1280px) {
+    background-image: url('/src/images/background/background_desktop/background_donut-registration_desktop.png');
+    transform: translate(60%, 50%);
   }
 }
+.registration__confetti {
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 500px;
+    height: 500px;
+    background-size: auto;
+    background-repeat: no-repeat;
+    transform: rotate(-8deg) translate(65%, -3%);
+    background-image: url('/src/images/background/background_tablet/background_confetti_tablet.png');
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url('/src/images/background/background_desktop/background_confetti_desktop.png');
+    transform: rotate(-8deg) translate(-11%, -16%);
+    width: 500px;
+    height: 500px;
+  }
+}
+
+// @media (min-device-pixel-ratio: 2),
+//   (min-resolution: 192dpi),
+//   (min-resolution: 2dppx) {
+//   .registration-section__donut {
+//     background: url('../images/background/background_desktop/background_donut-registration_desktop_2x.png');
+//     background-size: 196px 200px;
+//   }
+// }
