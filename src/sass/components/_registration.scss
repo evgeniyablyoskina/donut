@@ -286,21 +286,6 @@
   }
 }
 
-@keyframes button {
-  0% {
-    background-color: $button-bg-color;
-    box-shadow: 0 0 1px $button-bg-color;
-  }
-  50% {
-    background-color: $button-bg-color;
-    box-shadow: 0 0 2px $button-bg-color;
-  }
-  100% {
-    background-color: $button-bg-color;
-    box-shadow: 0 0 1px $button-bg-color;
-  }
-}
-
 .registration__donut {
   @media screen and (min-width: 768px) {
     position: absolute;
