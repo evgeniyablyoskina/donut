@@ -20,6 +20,10 @@ body {
   background-color: $primary-bg-color;
   color: $primary-text-color;
 
+  @media screen and (min-width: 1200px) {
+    background-color: $secondary-bg-color;
+  }
+
   //   background-image: url(../images/mobile/bg.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -253,5 +257,3 @@ input:invalid {
   color: red;
   outline: 1px solid red;
 }
-
-
