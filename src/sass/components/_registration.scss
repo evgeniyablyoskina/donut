@@ -1,20 +1,30 @@
+.registration {
+  @media screen and (max-width: 767px) {
+    padding-top: 32px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 60px;
+  }
+}
 .registration__container {
   position: relative;
   z-index: 1;
   @media screen and (max-width: 767px) {
-    padding-top: 32px;
     padding-left: 20px;
     padding-right: 20px;
   }
 
   @media screen and (min-width: 768px) {
-    padding-top: 40px;
     padding-left: 32px;
     padding-right: 32px;
   }
 
   @media screen and (min-width: 1280px) {
-    padding-top: 60px;
     padding-left: 232px;
     padding-right: 232px;
   }
