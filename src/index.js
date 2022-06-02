@@ -24,22 +24,37 @@ formList.forEach(formItem => {
     // Відміняємо сабміт форми
     event.preventDefault();
 
-    let text = '';
-    // Тут ми визначаємо яка форма була відправлена
-    if(formItem.classList[0] === 'form__contact'){
-      text = 'Your question has been sent!';
-    } else {
-      text = 'You are registered!';
-    }
-
-    // Показуємо pop-up
-    popUp.innerHTML = text;
-    popUp.classList.remove('pop-up--hide');
+    checkInputEmpty(formItem);
+    
     // Через 2 секунди ховаємо pop-up
     setTimeout(
       () => {
         popUp.classList.add('pop-up--hide')
+        popUp.classList.remove('pop-up--error')
       }, 2000
     );
   });
 });
+
+// Функція перевірки відправленої форми і первірки інпутів на пустоту
+function checkInputEmpty(formItem){
+  let text = '';
+  let notEmptyInputCounter = 0;
+  // Тут ми визначаємо яка форма була відправлена
+  formItem.querySelectorAll('input').forEach(input => {
+    notEmptyInputCounter += (input.value != '') ? 1 : 0;
+  });
+
+  if(formItem.classList[0] === 'form__contact' && notEmptyInputCounter == 2){
+    text = 'Your question has been sent!';
+  } else if(formItem.classList[0] === 'registration-form' && notEmptyInputCounter == 3) {
+    text = formItem.querySelector('input[type="text"]').value + ', you are registered!';
+  } else {
+    text = 'Please fill out all fields!';
+    popUp.classList.add('pop-up--error');
+  }
+
+  // Показуємо pop-up в залежності від відправленої форми
+  popUp.innerHTML = text;
+  popUp.classList.remove('pop-up--hide');
+}
