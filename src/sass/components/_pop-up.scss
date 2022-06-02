@@ -1,6 +1,6 @@
 .pop-up {
   position: fixed;
-  right: 30px;
+  right: 50%;
   top: 30px;
 
   padding: 30px;
@@ -10,6 +10,12 @@
   color: #fff;
   z-index: 100;
   transition: opacity 1s $tr-function;
+  transform: translateX(50%);
+
+  @media screen and (max-width: 767px) {
+    width: 90%;
+    text-align: center;
+  }
 
   &--hide {
     pointer-events: none;
