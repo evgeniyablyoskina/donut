@@ -1,17 +1,17 @@
-.pop-up{
+.pop-up {
   position: fixed;
   right: 30px;
   top: 30px;
 
   padding: 30px;
 
-  background-color:rgba(171, 129, 108, .8);
-  opacity: .8;
+  background-color: rgba(171, 129, 108, 0.8);
+  opacity: 0.8;
   color: #fff;
   z-index: 100;
   transition: opacity 1s $tr-function;
 
-  &--hide{
+  &--hide {
     pointer-events: none;
     opacity: 0;
   }

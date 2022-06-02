@@ -1,4 +1,4 @@
-.to-top{
+.to-top {
   position: fixed;
   bottom: 30px;
   right: 10px;
@@ -9,11 +9,11 @@
   width: 40px;
   height: 40px;
   padding: 0;
-  border:0;
+  border: 0;
   border-radius: 50%;
 
   opacity: 1;
-  background-color: rgba(171, 129, 108, .5);
+  background-color: rgba(171, 129, 108, 0.5);
   color: #fff;
   z-index: 10;
   cursor: pointer;
@@ -21,12 +21,12 @@
   transition-duration: 1s, $tr-duration, $tr-duration;
   transition-timing-function: $tr-function;
 
-  &:hover{
+  &:hover {
     background-color: #876655;
     box-shadow: 0 3px 1px #0000001a, 0 1px 2px #00000014, 0 2px 2px #0000001f;
   }
 
-  &--hide{
+  &--hide {
     opacity: 0;
     pointer-events: none;
   }
@@ -44,7 +44,7 @@
     height: 100px;
   }
 
-  &__icon{
+  &__icon {
     display: block;
     width: 40%;
     height: 40%;
