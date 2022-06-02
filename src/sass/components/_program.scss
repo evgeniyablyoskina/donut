@@ -1,12 +1,12 @@
-// Section styles
-
 .program {
   padding-top: 16px;
   padding-bottom: 50px;
+
   @media screen and (min-width: 768px) {
     padding-top: 77px;
     padding-bottom: 95px;
   }
+
   @media screen and (min-width: 1280px) {
     padding-top: 22px;
     padding-bottom: 170px;
@@ -17,15 +17,19 @@
   @media screen and (min-width: 768px) {
     display: flex;
   }
+
   @media screen and (min-width: 1280px) {
     max-width: 1033px;
   }
 }
 
 .program__title {
-  margin-bottom: 8px;
   @extend .title;
+
+  margin-bottom: 8px;
+
   text-align: center;
+
   @media screen and (min-width: 768px) {
     text-align: left;
   }
@@ -37,6 +41,7 @@
   @media screen and (min-width: 768px) {
     max-width: 335px;
   }
+
   @media screen and (min-width: 1280px) {
     max-width: calc(100% - 642px);
   }
@@ -44,6 +49,7 @@
 
 .program__list {
   margin-top: 8px;
+
   @media screen and (min-width: 1280px) {
     margin-top: 20px;
   }
@@ -51,6 +57,7 @@
 
 .program__paragraph::before {
   content: '> ';
+
   @media screen and (min-width: 1280px) {
     font-size: 18px;
   }
@@ -58,9 +65,10 @@
 
 .program__paragraph,
 .program__text {
-  font-family: 'Montserrat', sans-serif;
+  // font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   line-height: 1.25;
+
   @media screen and (min-width: 1280px) {
     font-size: 18px;
     line-height: 1.22;
@@ -69,6 +77,7 @@
 
 .program__paragraph {
   margin-bottom: 8px;
+
   @media screen and (min-width: 1280px) {
     margin-bottom: 16px;
   }
@@ -80,6 +89,7 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 60px;
+
   @media screen and (min-width: 768px) {
     margin-left: 32px;
     margin-top: 0;
@@ -94,40 +104,46 @@
 .program__item {
   position: relative;
   display: block;
+  margin-right: 20px;
+  margin-bottom: 64px;
+
   width: 130px;
   height: 130px;
+
   background-color: $frame-bg-color;
   border-radius: 50%;
   box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
-  margin-right: 20px;
-  margin-bottom: 64px;
 
   transition: background-color $tr-duration $tr-function,
     box-shadow $tr-duration $tr-function;
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
-    width: 152px;
-    height: 152px;
     margin-right: 31px;
     margin-bottom: 50px;
+    width: 152px;
+    height: 152px;
   }
+
   @media screen and (min-width: 1280px) {
-    width: 180px;
-    height: 180px;
     margin-right: 140px;
     margin-bottom: 80px;
+    width: 180px;
+    height: 180px;
   }
 
   &:nth-child(2n) {
     margin-right: 0;
     transform: translateY(30px);
+
     @media screen and (min-width: 768px) {
       transform: translateY(45px);
     }
+
     @media screen and (min-width: 1280px) {
       transform: translateY(123px);
     }
   }
+
   &:nth-child(n + 3) {
     margin-bottom: 0;
   }
@@ -140,15 +156,18 @@
 }
 
 .program__item::before {
+  content: '';
+
   position: absolute;
   top: 0;
   right: 0;
+
   transform: translate(-35%, -50%);
-  content: '';
-  background-size: contain;
-  background-repeat: no-repeat;
   width: 76px;
   height: 80px;
+
+  background-size: contain;
+  background-repeat: no-repeat;
 
   transition: transform 500ms $tr-function;
 
@@ -157,20 +176,24 @@
     width: 70px;
     height: 75px;
   }
+
   @media screen and (min-width: 1280px) {
     transform: translate(-55%, -50%);
     width: 85px;
     height: 95px;
   }
 }
+
 .program__item:hover.program__item::before,
 .program__item:focus.program__item::before {
-  transform: translate(-35%, -50%) rotate(90deg);
+  transform: translate(-35%, -50%) rotate(15deg);
+
   @media screen and (min-width: 768px) {
-    transform: translate(-54%, -50%) rotate(90deg);
+    transform: translate(-54%, -50%) rotate(30deg);
   }
+
   @media screen and (min-width: 1280px) {
-    transform: translate(-55%, -50%) rotate(90deg);
+    transform: translate(-55%, -50%) rotate(45deg);
   }
 }
 
@@ -205,6 +228,7 @@
     }
   }
 }
+
 .program__item:nth-child(2)::before {
   background-image: url(../images/mobile/program_number-of-gests_mobile.png);
 
@@ -234,6 +258,7 @@
     }
   }
 }
+
 .program__item:nth-child(3)::before {
   background-image: url(../images/mobile/program_time-of-event_mobile.png);
 
@@ -263,6 +288,7 @@
     }
   }
 }
+
 .program__item:last-child::before {
   background-image: url(../images/mobile/program_the-host-speaks_mobile.png);
 
@@ -296,51 +322,60 @@
 // Block in thr ring
 
 .program__block {
+  position: absolute;
+  bottom: 10px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: absolute;
-  bottom: 10px;
+
   width: 100%;
+
   @media screen and (min-width: 768px) {
     bottom: 16px;
   }
 }
 
 .program__name {
-  color: $frame-title-color;
   font-family: 'Caveat Brush', cursive;
-  font-style: normal;
   font-size: 18px;
   line-height: 1.28;
   text-align: center;
+  color: $frame-title-color;
+
   @media screen and (min-width: 1280px) {
     font-size: 24px;
     line-height: 1.25;
   }
 }
 
-.program--small-size {
-  font-size: 14;
-  text-align: center;
+.program__name--small-size {
   margin-top: 5px;
   margin-bottom: 8px;
+
+  font-size: 14;
+  text-align: center;
+
   @media screen and (min-width: 768px) {
     margin-top: 14px;
   }
+
   @media screen and (min-width: 1280px) {
+    margin-top: 16px;
     font-size: 16px;
     line-height: 1.25;
-    margin-top: 16px;
   }
 }
+
 .program__icon {
   width: 19px;
   height: 19px;
+
   @media screen and (min-width: 768px) {
     width: 21px;
     height: 21px;
   }
+
   @media screen and (min-width: 1280px) {
     width: 25px;
     height: 25px;
