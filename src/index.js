@@ -40,20 +40,28 @@ formList.forEach(formItem => {
 function checkInputEmpty(formItem){
   let text = '';
   let notEmptyInputCounter = 0;
-  // Тут ми визначаємо яка форма була відправлена
+  
+  // Рахуємо кількість не пустих інпутів
   formItem.querySelectorAll('input').forEach(input => {
     notEmptyInputCounter += (input.value != '') ? 1 : 0;
-    input.value = '';
   });
 
+  // Тут ми визначаємо яка форма була відправлена перевіряємо, що всі інпути не пусті
+  // і виводимо відповідний текст у pop-up
   if(formItem.classList[0] === 'form__contact' && notEmptyInputCounter == 2){
     text = 'Your question has been sent!';
   } else if(formItem.classList[0] === 'registration-form' && notEmptyInputCounter == 3) {
     text = formItem.querySelector('input[type="text"]').value + ', you are registered!';
   } else {
     text = 'Please fill out all fields!';
+    // При хоча б одному пустому інпуті - помилка
     popUp.classList.add('pop-up--error');
   }
+
+  // Очищаемо всі поля даної форми
+  formItem.querySelectorAll('input').forEach(input => {
+    input.value = '';
+  });
 
   // Показуємо pop-up в залежності від відправленої форми
   popUp.innerHTML = text;
