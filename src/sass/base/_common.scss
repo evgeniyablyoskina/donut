@@ -229,12 +229,13 @@ img {
   outline: none;
   border-bottom: 1px solid $rate-star-color;
   width: 100%;
-  height: 22px;
   color: $rate-star-color;
   line-height: 1.25;
-  ::placeholder {
+  background-color: inherit;
+  &::placeholder {
     font-size: 16px;
     padding-bottom: 2px;
+    font-weight: 400;
     color: $form-placeholder-color;
   }
 
@@ -253,6 +254,4 @@ input:invalid {
   outline: 1px solid red;
 }
 
-.form__input {
-  background-color: inherit;
-}
+
