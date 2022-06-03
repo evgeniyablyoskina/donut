@@ -26,6 +26,8 @@
       if (mobileMenuRef.classList.contains('is-open')) {
         mobileMenuRef.classList.remove('is-open');
         menuBtnRef.classList.remove('is-open');
+        //переключаємо атрибут overflow для body
+        document.body.classList.remove('overflow-hidden');
       }
     });
   });
