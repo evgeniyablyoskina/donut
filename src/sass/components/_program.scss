@@ -85,7 +85,7 @@
 
 // Second column
 
-.program__schedule {
+.schedule {
   display: flex;
   flex-wrap: wrap;
   margin-top: 60px;
@@ -101,7 +101,7 @@
   }
 }
 
-.program__item {
+.schedule__item {
   position: relative;
   display: block;
   margin-right: 20px;
@@ -149,13 +149,13 @@
   }
 }
 
-.program__item:hover,
-.program__item:focus {
+.schedule__item:hover,
+.schedule__item:focus {
   background-color: $form-placeholder-color;
   box-shadow: 0px 0px 3px 5px rgba(171, 129, 108, 0.5);
 }
 
-.program__item::before {
+.schedule__item::before {
   content: '';
 
   position: absolute;
@@ -184,8 +184,8 @@
   }
 }
 
-.program__item:hover.program__item::before,
-.program__item:focus.program__item::before {
+.schedule__item:hover.schedule__item::before,
+.schedule__item:focus.schedule__item::before {
   transform: translate(-35%, -50%) rotate(15deg);
 
   @media screen and (min-width: 768px) {
@@ -199,7 +199,7 @@
 
 // Pseudo-elements Donuts
 
-.program__item:first-child::before {
+.schedule__item:first-child::before {
   background-image: url(../images/mobile/program_type-of-event_mobile.png);
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -229,7 +229,7 @@
   }
 }
 
-.program__item:nth-child(2)::before {
+.schedule__item:nth-child(2)::before {
   background-image: url(../images/mobile/program_number-of-gests_mobile.png);
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -259,7 +259,7 @@
   }
 }
 
-.program__item:nth-child(3)::before {
+.schedule__item:nth-child(3)::before {
   background-image: url(../images/mobile/program_time-of-event_mobile.png);
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -289,7 +289,7 @@
   }
 }
 
-.program__item:last-child::before {
+.schedule__item:last-child::before {
   background-image: url(../images/mobile/program_the-host-speaks_mobile.png);
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -321,7 +321,7 @@
 
 // Block in thr ring
 
-.program__block {
+.schedule__block {
   position: absolute;
   bottom: 10px;
 
@@ -336,7 +336,7 @@
   }
 }
 
-.program__name {
+.schedule__name {
   font-family: 'Caveat Brush', cursive;
   font-size: 18px;
   line-height: 1.28;
@@ -349,7 +349,7 @@
   }
 }
 
-.program__name--small-size {
+.schedule__name--small-size {
   margin-top: 5px;
   margin-bottom: 8px;
 
@@ -367,7 +367,7 @@
   }
 }
 
-.program__icon {
+.schedule__icon {
   width: 19px;
   height: 19px;
 
