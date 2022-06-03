@@ -189,11 +189,11 @@
   transform: translate(-35%, -50%) rotate(15deg);
 
   @media screen and (min-width: 768px) {
-    transform: translate(-54%, -50%) rotate(30deg);
+    transform: translate(-54%, -50%) rotate(15deg);
   }
 
   @media screen and (min-width: 1280px) {
-    transform: translate(-55%, -50%) rotate(45deg);
+    transform: translate(-55%, -50%) rotate(15deg) scale(1.1);
   }
 }
 
