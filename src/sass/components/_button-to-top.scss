@@ -2,21 +2,23 @@
   position: fixed;
   bottom: 30px;
   right: 10px;
+  z-index: 10;
 
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0;
+
   width: 40px;
   height: 40px;
-  padding: 0;
-  border: 0;
-  border-radius: 50%;
 
+  cursor: pointer;
   opacity: 1;
   background-color: rgba(171, 129, 108, 0.5);
   color: #fff;
-  z-index: 10;
-  cursor: pointer;
+  border: 0;
+  border-radius: 50%;
+
   transition-property: opacity, background-color, box-shadow;
   transition-duration: 1s, $tr-duration, $tr-duration;
   transition-timing-function: $tr-function;
@@ -46,9 +48,11 @@
 
   &__icon {
     display: block;
+    margin-bottom: -10px;
+
     width: 40%;
     height: 40%;
-    margin-bottom: -10px;
+
     border-radius: 3px;
     border-right: 3px solid #fff;
     border-top: 3px solid #fff;
