@@ -244,15 +244,20 @@ img {
   display: inline;
 }
 
-.form__input {
+// input for registration & contact
+
+.input-data {
   display: block;
-  border: none;
-  outline: none;
-  border-bottom: 1px solid $rate-star-color;
+
   width: 100%;
-  color: $rate-star-color;
+
   line-height: 1.25;
+  color: $rate-star-color;
   background-color: inherit;
+  border: none;
+  border-bottom: 1px solid $rate-star-color;
+  outline: none;
+
   &::placeholder {
     font-size: 16px;
     padding-bottom: 2px;
@@ -263,8 +268,8 @@ img {
   &:focus-within,
   &:hover,
   &:focus {
-    border-radius: 4px;
     background-color: $primary-bg-color;
+    border-radius: 4px;
     box-shadow: $form-shadow;
     cursor: pointer;
   }
