@@ -7,12 +7,13 @@
   //Подія кліку по кнопці
   menuBtnRef.addEventListener('click', () => {
     // Отримуємо атрибут aria-expanded
-    const expended =
-      menuBtnRef.getAttribute('aria-expended') === 'true' || false;
+    const expended = menuBtnRef.getAttribute('aria-expended') === 'true' || false;
     // Переключаємо наявність класу is-open на кнопці
     menuBtnRef.classList.toggle('is-open');
     //міняємо значення aria-expanded
     menuBtnRef.setAttribute('aria-expended', !expended);
+    //переключаємо атрибут overflow для body
+    document.body.classList.toggle('overflow-hidden');
 
     // Переключаємо наявність класу is-open на меню
     mobileMenuRef.classList.toggle('is-open');
