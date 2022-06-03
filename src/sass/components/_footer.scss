@@ -1,5 +1,4 @@
 .footer {
-  position: relative;
   overflow: hidden;
   padding-top: 32px;
   padding-bottom: 20px;
@@ -35,6 +34,8 @@
 }
 
 .footer__location {
+  position: relative;
+
   display: inline;
 }
 
@@ -59,58 +60,57 @@
   }
 }
 
-.footer__box::after {
+.footer__location::after {
   content: '';
   position: absolute;
-  right: -26px;
-  bottom: -30px;
+  bottom: -55px;
+  right: -45px;
   z-index: -1;
 
   width: 113px;
   height: 99px;
 
-  background-image: url(../images/background/background_mobile/background_flour_mobile.png);
+  background-image: url(../images/background/footer/wheat_flour_mobile.png);
   background-repeat: no-repeat;
 
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/background/background_mobile/background_flour_mobile_2x.png);
+    background-image: url(../images/background/footer/wheat_flour_mobile@2x.png);
   }
 
   @media screen and (min-width: 768px) and (max-width: 1280px) {
-    right: -26px;
-    bottom: -63px;
-
+    bottom: -80px;
+    right: -127px;
     width: 207px;
     height: 182px;
 
-    background-image: url(../images/background/background_tablet/background_flour_tablet.png);
+    background-image: url(../images/background/footer/wheat_flour_tablet.png);
 
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/background/background_tablet/background_flour_tablet_2x.png);
+      background-image: url(../images/background/footer/wheat_flour_tablet@2x.png);
     }
   }
 
   @media screen and (min-width: 1280px) {
-    right: -60px;
     bottom: -145px;
+    right: -310px;
     z-index: 1;
 
     width: 355px;
     height: 312px;
 
-    background-image: url(../images/background/background_desktop/background_flour_desktop.png);
+    background-image: url(../images/background/footer/wheat_flour_desctop.png);
 
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/background/background_desktop/background_flour_desktop_2x.png);
+      background-image: url(../images/background/footer/wheat_flour_desctop@2x.png);
     }
   }
 }
