@@ -6,6 +6,10 @@
   align-items: center;
   padding-top: 8px;
 
+  @media screen and (max-width: 319px) {
+    padding-right: 20px;
+  }
+
   @media screen and (min-width: 768px) {
     padding-top: 35px;
   }
