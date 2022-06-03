@@ -28,6 +28,10 @@ body {
   @media screen and (min-width: 1279.98px) {
     background-position: 0 0;
   }
+
+  &.overflow-hidden{
+    overflow: hidden;
+  }
 }
 
 h1,
